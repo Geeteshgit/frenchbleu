@@ -1,65 +1,28 @@
-import Image from "next/image";
+import HeroSection from "../components/home/HeroSection";
+import CategoriesSection from "../components/home/CategoriesSection";
+import MacaronBanner from "../components/home/MacaronBanner";
+import FeaturedProducts from "../components/home/FeaturedProducts";
+import SplitPromoSection from "../components/home/SplitPromoSection";
+import AboutPreview from "../components/home/AboutPreview";
+import CTASection from "../components/home/CTASection";
+import WaveDivider from "../components/ui/WaveDivider";
 
-export default function Home() {
+const HomePage = () => {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <>
+      <HeroSection />
+      <CategoriesSection />
+      <WaveDivider
+        path="M0,64 C9,18 21,18 30,64 C39,110 51,110 60,64 C69,18 81,18 90,64 C99,110 111,110 120,64 C129,40 141,40 150,64 C159,110 171,110 180,64 C189,18 201,18 210,64 C219,90 231,90 240,64 C249,18 261,18 270,64 C279,110 291,110 300,64 C309,18 321,18 330,64 C339,70 351,70 360,64 C369,18 381,18 390,64 C399,110 411,110 420,64 C429,18 441,18 450,64 C459,110 471,110 480,64 C489,18 501,18 510,64 C519,110 531,110 540,64 C549,18 561,18 570,64 C579,110 591,110 600,64 C609,18 621,18 630,64 C639,110 651,110 660,64 C669,18 681,18 690,64 C699,110 711,110 720,64 C729,18 741,18 750,64 C759,110 771,110 780,64 C789,18 801,18 810,64 C819,110 831,110 840,64 C849,18 861,18 870,64 C879,110 891,110 900,64 C909,18 921,18 930,64 C939,110 951,110 960,64 C969,18 981,18 990,64 C999,110 1011,110 1020,64 C1029,18 1041,18 1050,64 C1059,110 1071,110 1080,64 C1089,18 1101,18 1110,64 C1119,110 1131,110 1140,64 C1149,18 1161,18 1170,64 C1179,110 1191,110 1200,64 C1209,18 1221,18 1230,64 C1239,110 1251,110 1260,64 C1269,18 1281,18 1290,64 C1299,110 1311,110 1320,64 C1329,18 1341,18 1350,64 C1359,110 1371,110 1380,64 C1389,18 1401,18 1410,64 C1419,110 1431,110 1440,64 L1440,120 L0,120 Z"
+        tone="text-background"
+      />
+      <MacaronBanner />
+      <FeaturedProducts />
+      <SplitPromoSection />
+      <AboutPreview />
+      <CTASection />
+    </>
   );
-}
+};
+
+export default HomePage;
