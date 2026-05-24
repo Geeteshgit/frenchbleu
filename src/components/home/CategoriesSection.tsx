@@ -9,7 +9,7 @@ import { categorySectionCopy } from "../../data/home";
 
 export default function CategoriesSection() {
   return (
-    <section className="bg-background py-8 sm:py-14">
+    <section className="bg-background py-8">
       <SectionTitle title={categorySectionCopy.title} centered />
 
       <Container className="mt-12">

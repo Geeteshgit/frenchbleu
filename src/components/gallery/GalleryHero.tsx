@@ -1,48 +1,77 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { motion } from "motion/react";
 import Image from "next/image";
 import Container from "../ui/Container";
-import Badge from "../ui/Badge";
+import { galleryHeroSlides } from "../../data/gallery";
 
 export default function GalleryHero() {
-  return (
-    <section className="bg-[linear-gradient(135deg,#edf8fb_0%,#fff9f6_45%,#ffe8ec_100%)] py-16 sm:py-20 lg:py-24">
-      <Container>
-        <div className="grid items-center gap-10 lg:grid-cols-[1fr_0.8fr]">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <Badge tone="blue">Gallery</Badge>
-            <h1 className="mt-6 text-5xl font-medium tracking-tight text-foreground sm:text-6xl lg:text-7xl">
-              A responsive dessert gallery with masonry energy and soft hover
-              motion.
-            </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-muted-foreground sm:text-xl">
-              Explore cupcakes, macarons, cakes, and pastries in a refined
-              pastel arrangement.
-            </p>
-          </motion.div>
+  const [activeSlide, setActiveSlide] = useState(0);
 
-          <motion.div
-            animate={{ y: [0, -10, 0] }}
-            transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
-            className="relative"
-          >
-            <Image
-              src="https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?auto=format&fit=crop&w=1400&q=80"
-              alt="Luxury dessert spread"
-              width={1400}
-              height={900}
-              priority
-              sizes="(min-width: 1024px) 35vw, 100vw"
-              className="h-90 w-full rounded-[2.5rem] object-cover shadow-[0_30px_80px_rgba(174,222,234,0.22)]"
-            />
-          </motion.div>
+  useEffect(() => {
+    const timer = window.setInterval(() => {
+      setActiveSlide((currentSlide) =>
+        currentSlide === galleryHeroSlides.length - 1 ? 0 : currentSlide + 1,
+      );
+    }, 5000);
+
+    return () => window.clearInterval(timer);
+  }, []);
+
+  return (
+    <Container className="py-8 sm:py-12 lg:py-16">
+      <div className="relative overflow-hidden rounded-[2.5rem] border border-white/60 bg-white/45 shadow-[0_30px_80px_rgba(174,222,234,0.2)] backdrop-blur-sm">
+        <motion.div
+          animate={{ x: `-${activeSlide * 100}%` }}
+          transition={{ type: "spring", stiffness: 90, damping: 18 }}
+          className="flex"
+        >
+          {galleryHeroSlides.map((slide) => (
+            <article
+              key={slide.id}
+              className="relative min-h-112 w-full shrink-0 overflow-hidden sm:min-h-128 lg:min-h-152"
+            >
+              <Image
+                src={slide.image}
+                alt={slide.title}
+                fill
+                priority={slide.id === 1}
+                sizes="100vw"
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,10,10,0.12)_0%,rgba(10,10,10,0.32)_55%,rgba(10,10,10,0.72)_100%)]" />
+              <div className="absolute inset-x-0 bottom-0 p-6 sm:p-8 lg:p-10">
+                <div className="max-w-2xl text-white">
+                  <h1 className="mt-4 max-w-xl text-4xl font-medium tracking-tight sm:text-5xl lg:text-6xl">
+                    {slide.title}
+                  </h1>
+                  <p className="mt-4 max-w-xl text-base leading-7 text-white/85 sm:text-lg">
+                    {slide.description}
+                  </p>
+                </div>
+              </div>
+            </article>
+          ))}
+        </motion.div>
+        <div className="absolute inset-x-0 bottom-0 flex items-center justify-between gap-4 p-4 sm:p-6">
+          <div className="flex gap-2">
+            {galleryHeroSlides.map((slide, index) => (
+              <button
+                key={slide.id}
+                type="button"
+                aria-label={`Show gallery slide ${index + 1}`}
+                onClick={() => setActiveSlide(index)}
+                className={`h-2.5 rounded-full transition-all duration-300 ${
+                  index === activeSlide
+                    ? "w-10 bg-white"
+                    : "w-2.5 bg-white/45 hover:bg-white/70"
+                }`}
+              />
+            ))}
+          </div>
         </div>
-      </Container>
-    </section>
+      </div>
+    </Container>
   );
 }

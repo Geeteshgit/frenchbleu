@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "motion/react";
 import Image from "next/image";
 import type { Category } from "../../types";
 import Card from "./Card";
@@ -11,10 +8,7 @@ type CategoryCardProps = {
 
 export default function CategoryCard({ category }: CategoryCardProps) {
   return (
-    <motion.article
-      whileHover={{ y: -4, scale: 1.01 }}
-      transition={{ duration: 0.25 }}
-    >
+    <article>
       <Card className="group h-full overflow-hidden bg-white">
         <div className="relative aspect-5/4 overflow-hidden">
           <Image
@@ -31,6 +25,6 @@ export default function CategoryCard({ category }: CategoryCardProps) {
           </p>
         </div>
       </Card>
-    </motion.article>
+    </article>
   );
 }

@@ -22,6 +22,14 @@ export type Category = {
   image: string;
 };
 
+export type GalleryHeroSlide = {
+  id: number;
+  title: string;
+  eyebrow: string;
+  description: string;
+  image: string;
+};
+
 export type Product = {
   id: number;
   title: string;

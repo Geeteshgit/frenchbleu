@@ -9,7 +9,7 @@ import { macaronBannerCopy } from "../../data/home";
 export default function MacaronBanner() {
   return (
     <section className="bg-background">
-      <div className="bg-secondary/30">
+      <div className="bg-secondary">
         <Container className="py-12 sm:py-16">
           <div className="grid items-center gap-10 lg:grid-cols-[0.95fr_1.05fr]">
             <motion.div

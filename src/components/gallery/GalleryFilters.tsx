@@ -14,7 +14,7 @@ export default function GalleryFilters({
   onChange,
 }: GalleryFiltersProps) {
   return (
-    <div className="mb-8 flex flex-wrap gap-3 pt-14">
+    <div className="mb-8 flex flex-wrap gap-3">
       {filters.map((filter) => {
         const active = activeFilter === filter;
 

@@ -1,4 +1,43 @@
-import type { GalleryItem } from "../types";
+import type { GalleryHeroSlide, GalleryItem } from "../types";
+
+export const galleryHeroSlides: GalleryHeroSlide[] = [
+  {
+    id: 1,
+    eyebrow: "Featured collection",
+    title: "French macaron towers with a satin-finish glaze",
+    description:
+      "A layered palette of rose, cream, and blueberry tones designed to feel like a quiet celebration.",
+    image:
+      "https://images.unsplash.com/photo-1509365465985-25d11c17e812?auto=format&fit=crop&w=1600&q=80",
+  },
+  {
+    id: 2,
+    eyebrow: "Seasonal highlight",
+    title: "Soft-iced cupcakes arranged like a boutique display",
+    description:
+      "Cloud-light frosting, delicate piping, and a glassy backdrop keep the focus on the cakes.",
+    image:
+      "https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=1600&q=80",
+  },
+  {
+    id: 3,
+    eyebrow: "Signature bake",
+    title: "Celebration cakes with hand-finished floral detail",
+    description:
+      "Designed for the center of the table, with elegant textures and a deep, romantic color story.",
+    image:
+      "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=1600&q=80",
+  },
+  {
+    id: 4,
+    eyebrow: "Artisan tray",
+    title: "Pastries and cookies layered into a golden morning spread",
+    description:
+      "A warm, editorial-style composition that feels like it was styled for a dessert magazine cover.",
+    image:
+      "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=1600&q=80",
+  },
+];
 
 export const galleryFilters = [
   "All",

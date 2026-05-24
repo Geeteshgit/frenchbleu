@@ -7,7 +7,7 @@ import { homeHero } from "../../data/home";
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-primary pt-4">
+    <section className="relative overflow-hidden bg-secondary pt-4">
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
           aria-hidden="true"
