@@ -18,7 +18,7 @@ export default function ProductCard({ product }: ProductCardProps) {
       transition={{ type: "spring", stiffness: 260, damping: 24 }}
       className="h-full"
     >
-      <Card className="group flex h-full flex-col overflow-hidden bg-white">
+      <Card className="group flex h-full flex-col overflow-hidden bg-card">
         <div className="relative aspect-4/3 overflow-hidden">
           <Image
             src={product.image}
@@ -42,9 +42,6 @@ export default function ProductCard({ product }: ProductCardProps) {
                   {product.title}
                 </h3>
               </div>
-              <p className="text-xl font-semibold text-primary-foreground">
-                {product.price}
-              </p>
             </div>
             <p className="mt-3 text-sm leading-7 text-muted-foreground">
               {product.description}
@@ -52,9 +49,6 @@ export default function ProductCard({ product }: ProductCardProps) {
           </div>
 
           <div className="mt-auto flex items-center justify-between gap-3">
-            <Button href="/contact" variant="secondary" size="sm">
-              Request this treat
-            </Button>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
               {product.tags.join(" / ")}
             </p>
