@@ -1,16 +1,12 @@
 import ContactHero from "@/components/contact/ContactHero";
 import ContactInfo from "@/components/contact/ContactInfo";
-import FAQSection from "@/components/contact/FAQSection";
-import CTASection from "@/components/home/CTASection";
 
 const ContactPage = () => {
   return (
-    <>
+    <main className="flex flex-col gap-16 pb-8">
       <ContactHero />
       <ContactInfo />
-      <FAQSection />
-      <CTASection variant="contact" />
-    </>
+    </main>
   );
 };
 
