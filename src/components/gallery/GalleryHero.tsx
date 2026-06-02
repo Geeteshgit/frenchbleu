@@ -1,10 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { motion } from "motion/react";
 import Image from "next/image";
 import Container from "../ui/Container";
-import { galleryHeroSlides } from "../../data/gallery";
+import { galleryHeroSlides } from "@/data/gallery";
 
 export default function GalleryHero() {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -20,17 +19,16 @@ export default function GalleryHero() {
   }, []);
 
   return (
-    <Container className="py-8 sm:py-12 lg:py-16">
-      <div className="relative overflow-hidden rounded-[2.5rem] border border-white/60 bg-white/45 shadow-[0_30px_80px_rgba(174,222,234,0.2)] backdrop-blur-sm">
-        <motion.div
-          animate={{ x: `-${activeSlide * 100}%` }}
-          transition={{ type: "spring", stiffness: 90, damping: 18 }}
-          className="flex"
+    <Container>
+      <div className="relative overflow-hidden rounded-xl border border-white/60 bg-white/45">
+        <div
+          className="flex transition-transform duration-700 ease-out"
+          style={{ transform: `translateX(-${activeSlide * 100}%)` }}
         >
           {galleryHeroSlides.map((slide) => (
             <article
               key={slide.id}
-              className="relative min-h-112 w-full shrink-0 overflow-hidden sm:min-h-128 lg:min-h-152"
+              className="relative min-h-112 w-full shrink-0 overflow-hidden sm:min-h-128"
             >
               <Image
                 src={slide.image}
@@ -53,8 +51,8 @@ export default function GalleryHero() {
               </div>
             </article>
           ))}
-        </motion.div>
-        <div className="absolute inset-x-0 bottom-0 flex items-center justify-between gap-4 p-4 sm:p-6">
+        </div>
+        <div className="absolute inset-x-0 bottom-0 flex items-center justify-center p-4 sm:p-6">
           <div className="flex gap-2">
             {galleryHeroSlides.map((slide, index) => (
               <button
@@ -65,7 +63,7 @@ export default function GalleryHero() {
                 className={`h-2.5 rounded-full transition-all duration-300 ${
                   index === activeSlide
                     ? "w-10 bg-white"
-                    : "w-2.5 bg-white/45 hover:bg-white/70"
+                    : "w-2.5 bg-white/45 hover:bg-white/75"
                 }`}
               />
             ))}

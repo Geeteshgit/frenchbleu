@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Pacifico, Quicksand, Cormorant_Garamond } from "next/font/google";
-import Header from "../components/layout/Header";
-import Footer from "../components/layout/Footer";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 import "./globals.css";
 
 const pacifico = Pacifico({
@@ -38,7 +38,7 @@ export default function RootLayout({
       className={`${pacifico.variable} ${quicksand.variable} ${cormorant.variable} h-full antialiased`}
     >
       <body className="min-h-screen flex flex-col bg-background text-foreground">
-        <Header />
+        <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
       </body>

@@ -1,19 +1,16 @@
-import type { ReactNode } from "react";
+import React from "react";
 import clsx from "clsx";
 import Container from "./Container";
-import Badge from "./Badge";
 
 type SectionTitleProps = {
-  eyebrow?: string;
   title: string;
   subtitle?: string;
   className?: string;
   centered?: boolean;
-  children?: ReactNode;
+  children?: React.ReactNode;
 };
 
 export default function SectionTitle({
-  eyebrow,
   title,
   subtitle,
   className,
@@ -23,12 +20,11 @@ export default function SectionTitle({
   return (
     <Container className={className}>
       <div className={clsx("max-w-3xl", centered && "mx-auto text-center")}>
-        {eyebrow ? <Badge tone="blue">{eyebrow}</Badge> : null}
-        <h2 className="mt-4 text-4xl font-medium tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+        <h2 className="text-xl font-medium tracking-tight text-foreground sm:text-2xl lg:text-3xl">
           {title}
         </h2>
         {subtitle ? (
-          <p className="mt-5 text-base leading-8 text-muted-foreground sm:text-lg">
+          <p className="mt-3 text-base leading-8 text-foreground sm:text-lg">
             {subtitle}
           </p>
         ) : null}

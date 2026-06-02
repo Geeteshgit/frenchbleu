@@ -6,7 +6,7 @@
   --background: #ffffff;
   --foreground: #1a1a1a;
 
-  --card: #ffffff;
+  --card: #f4f4f4;
   --card-foreground: #1a1a1a;
 
   --popover: #ffffff;
@@ -80,6 +80,10 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   * {
     @apply border-border;
   }

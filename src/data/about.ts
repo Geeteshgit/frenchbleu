@@ -1,5 +1,4 @@
 export const aboutHeroCopy = {
-  eyebrow: "About FrenchBleu",
   title:
     "A little bakery world built from pastel colors, slow craftsmanship, and joyful details.",
   subtitle:
@@ -39,7 +38,6 @@ export const valuesCopy = [
 ];
 
 export const aboutCtaCopy = {
-  eyebrow: "Celebrate with us",
   title:
     "Bring the bakery mood to birthdays, showers, weddings, and every sweet in-between.",
   subtitle:

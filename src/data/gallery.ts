@@ -3,7 +3,6 @@ import type { GalleryHeroSlide, GalleryItem } from "../types";
 export const galleryHeroSlides: GalleryHeroSlide[] = [
   {
     id: 1,
-    eyebrow: "Featured collection",
     title: "French macaron towers with a satin-finish glaze",
     description:
       "A layered palette of rose, cream, and blueberry tones designed to feel like a quiet celebration.",
@@ -12,7 +11,6 @@ export const galleryHeroSlides: GalleryHeroSlide[] = [
   },
   {
     id: 2,
-    eyebrow: "Seasonal highlight",
     title: "Soft-iced cupcakes arranged like a boutique display",
     description:
       "Cloud-light frosting, delicate piping, and a glassy backdrop keep the focus on the cakes.",
@@ -21,7 +19,6 @@ export const galleryHeroSlides: GalleryHeroSlide[] = [
   },
   {
     id: 3,
-    eyebrow: "Signature bake",
     title: "Celebration cakes with hand-finished floral detail",
     description:
       "Designed for the center of the table, with elegant textures and a deep, romantic color story.",
@@ -30,7 +27,6 @@ export const galleryHeroSlides: GalleryHeroSlide[] = [
   },
   {
     id: 4,
-    eyebrow: "Artisan tray",
     title: "Pastries and cookies layered into a golden morning spread",
     description:
       "A warm, editorial-style composition that feels like it was styled for a dessert magazine cover.",

@@ -13,8 +13,8 @@ export default function Badge({
   tone = "pink",
 }: BadgeProps) {
   const tones = {
-    pink: "bg-primary/15 text-primary-foreground",
-    blue: "bg-secondary/25 text-secondary-foreground",
+    pink: "bg-primary text-primary-foreground",
+    blue: "bg-secondary text-secondary-foreground",
     neutral: "bg-muted text-muted-foreground",
   };
 

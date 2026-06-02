@@ -1,33 +1,32 @@
 import type { FAQItem, InfoCard } from "../types";
+import { FaClock, FaEnvelope, FaPhone, FaLocationDot } from "react-icons/fa6";
 
 export const contactHeroCopy = {
-  eyebrow: "Contact and celebrations",
-  title:
-    "Tell us about your dessert vision and we will turn it into a pastel showpiece.",
+  title: "Contact Us",
   subtitle:
     "Custom cakes, macaron boxes, cupcake towers, and event dessert tables are all welcome.",
 };
 
 export const contactInfoCards: InfoCard[] = [
   {
-    title: "Visit us",
-    details: [
-      "15 Rose Avenue",
-      "New York, NY 10001",
-      "By appointment for custom orders",
-    ],
+    title: "Phone",
+    details: ["+91 8745125698"],
+    icon: FaPhone,
   },
   {
-    title: "Call or message",
-    details: [
-      "hello@sweetbakery.com",
-      "+1 (212) 555-0198",
-      "Replies within one business day",
-    ],
+    title: "Email",
+    details: ["frenchbleu2025@gmail.com"],
+    icon: FaEnvelope,
   },
   {
-    title: "Opening hours",
-    details: ["Mon - Fri: 9am - 6pm", "Sat: 10am - 5pm", "Sun: closed"],
+    title: "Address",
+    details: ["15 Rose Avenue, New York, NY 10001"],
+    icon: FaLocationDot,
+  },
+  {
+    title: "Hours",
+    details: ["Mon - Sat: 9am - 6pm", "Sun: closed"],
+    icon: FaClock,
   },
 ];
 

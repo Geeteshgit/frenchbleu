@@ -19,26 +19,24 @@ export type SocialLink = {
 export type Category = {
   id: string;
   name: string;
-  image: string;
+  icon: string;
+  popular: boolean;
 };
 
 export type GalleryHeroSlide = {
   id: number;
   title: string;
-  eyebrow: string;
   description: string;
   image: string;
 };
 
+export type ProductTag = "Best Sellers" | "New Arrivals";
+
 export type Product = {
-  id: number;
   title: string;
-  price: string;
   category: string;
   image: string;
-  badge: string;
-  description: string;
-  tags: string[];
+  tags?: ProductTag[];
 };
 
 export type GalleryItem = {
@@ -73,4 +71,13 @@ export type FAQItem = {
 export type InfoCard = {
   title: string;
   details: string[];
+  icon: IconType;
+};
+
+export type AnimationProps = {
+  children: React.ReactNode;
+  className?: string;
+  delay?: number;
+  duration?: number;
+  once?: boolean;
 };

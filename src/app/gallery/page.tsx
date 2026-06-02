@@ -1,10 +1,10 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import GalleryHero from "../../components/gallery/GalleryHero";
-import GalleryFilters from "../../components/gallery/GalleryFilters";
-import GalleryGrid from "../../components/gallery/GalleryGrid";
-import { galleryFilters, galleryItems } from "../../data/gallery";
+import GalleryHero from "@/components/gallery/GalleryHero";
+import GalleryFilters from "@/components/gallery/GalleryFilters";
+import GalleryGrid from "@/components/gallery/GalleryGrid";
+import { galleryFilters, galleryItems } from "@/data/gallery";
 
 export default function GalleryPage() {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -18,18 +18,14 @@ export default function GalleryPage() {
   }, [activeFilter]);
 
   return (
-    <>
+    <main className="space-y-8 pt-14 pb-8">
       <GalleryHero />
-      <section className="pb-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <GalleryFilters
-            activeFilter={activeFilter}
-            filters={galleryFilters}
-            onChange={setActiveFilter}
-          />
-          <GalleryGrid items={filteredItems} />
-        </div>
-      </section>
-    </>
+      <GalleryFilters
+        activeFilter={activeFilter}
+        filters={galleryFilters}
+        onChange={setActiveFilter}
+      />
+      <GalleryGrid items={filteredItems} />
+    </main>
   );
 }

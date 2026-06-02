@@ -21,7 +21,7 @@ export default function ContactHero() {
       </div>
 
       <ScaleIn delay={0.2}>
-        <div className="pointer-events-none absolute inset-x-0 -bottom-3.5 sm:-bottom-45">
+        <div className="pointer-events-none absolute inset-x-0 -bottom-3.5 sm:-bottom-70">
           <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
             <Image
               src="/macarons.png"

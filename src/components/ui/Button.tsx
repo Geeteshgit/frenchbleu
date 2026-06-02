@@ -24,13 +24,11 @@ export default function Button({
   ...props
 }: ButtonProps) {
   const base =
-    "inline-flex items-center justify-center rounded-full font-semibold transition duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background";
+    "inline-flex items-center justify-center rounded-md font-semibold transition duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background cursor-pointer";
 
   const variants = {
-    primary:
-      "bg-primary text-primary-foreground shadow-lg shadow-primary/20 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-primary/25",
-    secondary:
-      "bg-secondary text-secondary-foreground shadow-lg shadow-secondary/20 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-secondary/25",
+    primary: "bg-primary text-white hover:scale-101",
+    secondary: "bg-secondary text-white hover:scale-101",
     ghost: "bg-transparent text-foreground hover:bg-muted",
     dark: "bg-foreground text-background hover:bg-foreground/90",
   };
