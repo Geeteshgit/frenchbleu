@@ -2,7 +2,7 @@ import FadeUp from "../animations/FadeUp";
 
 const LocationMap = () => {
   return (
-    <FadeUp y={18} delay={0.22}>
+    <FadeUp delay={0.22}>
       <div className="overflow-hidden rounded-xl">
         <iframe
           title="FrenchBleu location"
