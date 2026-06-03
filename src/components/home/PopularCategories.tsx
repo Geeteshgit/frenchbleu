@@ -15,9 +15,9 @@ export default function PopularCategories() {
       <SectionTitle title={popularCategories.title} centered />
 
       <Container className="mt-12">
-        <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7">
+        <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-6">
           {popularHomeCategories.map((category, index) => (
-            <FadeUp key={category.id} delay={index * 0.08} y={24}>
+            <FadeUp key={category.id} delay={index * 0.08}>
               <CategoryCard category={category} href="/menu" />
             </FadeUp>
           ))}

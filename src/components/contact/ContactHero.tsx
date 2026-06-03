@@ -8,7 +8,7 @@ export default function ContactHero() {
     <section className="relative overflow-hidden bg-primary pt-14 pb-0 sm:pt-16 lg:pt-20">
       <div className="mx-auto max-w-6xl px-4 pb-24 text-center sm:px-6 sm:pb-28 lg:px-8 lg:pb-32">
         <FadeUp className="mx-auto max-w-3xl">
-          <h1 className="text-4xl tracking-tight font-semibold text-primary-foreground sm:text-5xl lg:text-6xl">
+          <h1 className="text-4xl font-logo font-medium text-primary-foreground sm:text-5xl lg:text-6xl">
             {contactHeroCopy.title}
           </h1>
         </FadeUp>

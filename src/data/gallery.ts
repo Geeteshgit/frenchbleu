@@ -1,6 +1,12 @@
-import type { GalleryHeroSlide, GalleryItem } from "../types";
+import type { GalleryCarouselSlide, GalleryItem } from "../types";
 
-export const galleryHeroSlides: GalleryHeroSlide[] = [
+export const galleryHero = {
+  title: "Our Gallery",
+  subtitle:
+    "A curated collection of our most beautiful and delicious creations, showcasing the artistry and craftsmanship that goes into every French Bleu dessert.",
+};
+
+export const galleryCarouselSlides: GalleryCarouselSlide[] = [
   {
     id: 1,
     title: "French macaron towers with a satin-finish glaze",

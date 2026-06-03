@@ -23,7 +23,7 @@ export type Category = {
   popular: boolean;
 };
 
-export type GalleryHeroSlide = {
+export type GalleryCarouselSlide = {
   id: number;
   title: string;
   description: string;

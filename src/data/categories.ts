@@ -53,6 +53,6 @@ export const categories: Category[] = [
     id: "brownies",
     name: "Brownies",
     icon: "/brownies-icon.png",
-    popular: true,
+    popular: false,
   },
 ];
