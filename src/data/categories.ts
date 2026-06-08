@@ -17,7 +17,7 @@ export const categories: Category[] = [
     id: "pastries",
     name: "Pastries",
     icon: "/pastries-icon.png",
-    popular: true,
+    popular: false,
   },
   {
     id: "macarons",
@@ -53,6 +53,6 @@ export const categories: Category[] = [
     id: "brownies",
     name: "Brownies",
     icon: "/brownies-icon.png",
-    popular: false,
+    popular: true,
   },
 ];

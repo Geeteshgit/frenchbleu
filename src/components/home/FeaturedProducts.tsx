@@ -29,7 +29,7 @@ export default function FeaturedProducts() {
               type="button"
               onClick={() => setActiveTab(tab)}
               className={clsx(
-                "text-lg font-semibold cursor-pointer",
+                "sm:text-lg font-semibold cursor-pointer",
                 active
                   ? "text-secondary"
                   : "text-foreground transition hover:text-secondary",
@@ -41,8 +41,8 @@ export default function FeaturedProducts() {
         })}
       </div>
 
-      <Container className="mt-10">
-        <FadeUp key={activeTab} y={18} className="relative">
+      <Container className="mt-6 sm:mt-10">
+        <FadeUp key={activeTab} className="relative">
           <EmblaCarousel
             items={filteredProducts}
             className="mx-auto max-w-6xl"

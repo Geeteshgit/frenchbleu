@@ -5,27 +5,25 @@ import { productBanner } from "@/data/home";
 
 export default function ProductBanner() {
   return (
-    <section className="overflow-hidden bg-primary">
+    <section className="bg-primary">
       <Container banner className="pt-18">
-        <div className="flex items-center gap-8">
-          <div className="max-w-xl">
-            <h2 className="text-3xl tracking-tight text-primary-foreground sm:text-4xl lg:text-5xl">
+        <div className="flex flex-col sm:flex-row items-center gap-8">
+          <div className="flex flex-col items-center sm:items-start gap-6 text-center sm:text-left">
+            <h2 className="text-2xl text-primary-foreground sm:text-4xl lg:text-5xl">
               {productBanner.title}
             </h2>
 
-            <p className="mt-6 text-base leading-8 text-primary-foreground sm:text-lg">
+            <p className="text-base text-primary-foreground sm:text-lg">
               {productBanner.subtitle}
             </p>
 
-            <div className="mt-8">
-              <Button href="/gallery" variant="secondary">
-                {productBanner.cta}
-              </Button>
-            </div>
+            <Button href="/gallery" variant="secondary">
+              {productBanner.cta}
+            </Button>
           </div>
 
-          <div className="relative h-80 w-full lg:h-90">
-            <Image src={productBanner.image} alt="Macarons" fill priority />
+          <div className="relative h-40 sm:h-80 w-full">
+            <Image src={productBanner.image} alt="Macarons" fill />
           </div>
         </div>
       </Container>

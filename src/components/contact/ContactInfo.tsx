@@ -13,16 +13,16 @@ export default function ContactInfo() {
       <Container>
         <div className="grid items-start gap-8 lg:grid-cols-2 lg:gap-10 xl:gap-14">
           <div className="space-y-8">
-            <div className="grid gap-4 sm:grid-cols-2">
+            <div className="grid gap-4 grid-cols-2">
               {contactInfoCards.map((card, index) => (
                 <FadeUp key={card.title} delay={index * 0.08}>
                   <Card className="h-full flex-col border-0 bg-secondary/20 px-4 py-4 text-center rounded-xl">
                     <card.icon
-                      className="mx-auto h-10 w-10 text-secondary"
+                      className="mx-auto h-6 w-6 sm:h-10 sm:w-10 text-secondary"
                       aria-hidden="true"
                     />
 
-                    <h3 className="text-lg font-semibold text-foreground">
+                    <h3 className="text-lg font-semibold text-foreground ">
                       {card.title}
                     </h3>
 

@@ -10,7 +10,7 @@ const LocationMap = () => {
           loading="lazy"
           allowFullScreen
           referrerPolicy="no-referrer-when-downgrade"
-          className="h-70 w-full"
+          className="h-50 sm:h-70 w-full"
         />
       </div>
     </FadeUp>

@@ -12,8 +12,8 @@ export default function Footer() {
         tone="text-background"
       />
       <Container banner className="flex flex-col gap-12 pb-8 pt-16">
-        <div className="grid gap-12 xl:grid-cols-[2fr_1fr_1fr_2fr] xl:items-start">
-          <div>
+        <div className="grid gap-12 md:grid-cols-2 xl:grid-cols-5 xl:items-start">
+          <div className="md:col-span-2 xl:col-span-2">
             <div className="font-logo text-4xl text-white">{brand.name}</div>
             <p className="mt-4 max-w-md text-sm text-white/80">
               {brand.tagline}
@@ -33,7 +33,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div>
+          <div className="xl:col-span-1">
             <h3 className="text-sm font-semibold uppercase tracking-[0.22em] text-white">
               {footerColumns[0].title}
             </h3>
@@ -50,7 +50,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div>
+          <div className="xl:col-span-1">
             <h3 className="text-sm font-semibold uppercase tracking-[0.22em] text-white">
               {footerColumns[1].title}
             </h3>
@@ -67,11 +67,11 @@ export default function Footer() {
             </div>
           </div>
 
-          <div>
+          <div className="xl:col-span-1">
             <h3 className="text-sm font-semibold uppercase tracking-[0.22em] text-white">
               Contact
             </h3>
-            <div className="mt-4 grid gap-4 sm:grid-cols-2">
+            <div className="mt-4 grid gap-4">
               {contactInfoCards.map((card) => (
                 <div
                   key={card.title}

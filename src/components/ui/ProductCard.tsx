@@ -9,7 +9,7 @@ type ProductCardProps = {
 export default function ProductCard({ product }: ProductCardProps) {
   return (
     <article className="flex flex-col items-center gap-3">
-      <Card className="group overflow-hidden h-52 w-52 rounded-sm">
+      <Card className="group overflow-hidden h-44 w-44 sm:h-52 sm:w-52 rounded-sm">
         <div className="relative h-full w-full overflow-hidden">
           <Image
             src={product.image}

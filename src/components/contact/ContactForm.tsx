@@ -5,7 +5,7 @@ import Input from "../ui/Input";
 
 const ContactForm = () => {
   return (
-    <FadeUp y={20} delay={0.08}>
+    <FadeUp delay={0.08}>
       <div className="bg-white">
         <h2 className="text-3xl font-medium tracking-tight text-foreground sm:text-4xl">
           Get In Touch
