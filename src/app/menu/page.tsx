@@ -40,21 +40,22 @@ export default function MenuPage() {
     <main className="bg-background pb-16">
       <MenuHero />
       <MenuCategories categories={menuCategories} />
+      <div>
+        {menuCategories.map((category) => {
+          const categoryProducts = products.filter(
+            (product) => product.category === category.name,
+          );
 
-      {menuCategories.map((category) => {
-        const categoryProducts = products.filter(
-          (product) => product.category === category.name,
-        );
-
-        return (
-          <MenuProducts
-            key={category.id}
-            categoryId={category.id}
-            categoryName={category.name}
-            products={categoryProducts}
-          />
-        );
-      })}
+          return (
+            <MenuProducts
+              key={category.id}
+              categoryId={category.id}
+              categoryName={category.name}
+              products={categoryProducts}
+            />
+          );
+        })}
+      </div>
     </main>
   );
 }

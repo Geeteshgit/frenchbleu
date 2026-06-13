@@ -1,5 +1,4 @@
 import Container from "../ui/Container";
-import Badge from "../ui/Badge";
 import Card from "../ui/Card";
 import FadeUp from "../animations/FadeUp";
 import { storyCopy } from "@/data/about";
@@ -10,7 +9,6 @@ export default function StorySection() {
       <Container>
         <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
           <FadeUp>
-            <Badge tone="blue">Our story</Badge>
             <h2 className="mt-5 text-4xl font-medium tracking-tight text-foreground sm:text-5xl">
               From a tiny pastel studio to a full celebration bakery.
             </h2>
@@ -36,7 +34,6 @@ export default function StorySection() {
 
           <FadeUp delay={0.1} className="grid gap-6">
             <Card className="bg-secondary p-6 sm:p-8">
-              <Badge>Philosophy</Badge>
               <p className="mt-5 text-2xl leading-10 text-foreground sm:text-3xl">
                 {storyCopy.philosophy}
               </p>

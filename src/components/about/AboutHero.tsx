@@ -8,7 +8,7 @@ export default function AboutHero() {
     <section className="bg-primary py-16 sm:py-20 lg:py-24">
       <Container>
         <div className="grid items-center gap-10 lg:grid-cols-[0.95fr_1.05fr]">
-          <FadeUp y={20}>
+          <FadeUp>
             <h1 className="mt-6 text-5xl font-medium tracking-tight text-foreground sm:text-6xl lg:text-7xl">
               {aboutHeroCopy.title}
             </h1>
@@ -17,7 +17,7 @@ export default function AboutHero() {
             </p>
           </FadeUp>
 
-          <FadeUp y={0} scale={0.96} className="relative">
+          <FadeUp className="relative">
             <div className="absolute inset-6 rounded-[2.5rem] bg-primary blur-3xl" />
             <Image
               src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?auto=format&fit=crop&w=1400&q=80"

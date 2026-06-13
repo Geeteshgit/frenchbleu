@@ -9,7 +9,6 @@ type EmblaCarouselProps<T> = {
   items: T[];
   renderItem: (item: T, index: number) => ReactNode;
   className?: string;
-  viewportClassName?: string;
   containerClassName?: string;
   slideClassName?: string;
   prevLabel?: string;
@@ -20,7 +19,6 @@ export default function EmblaCarousel<T>({
   items,
   renderItem,
   className,
-  viewportClassName,
   containerClassName,
   slideClassName,
   prevLabel = "Scroll previous",
@@ -49,10 +47,7 @@ export default function EmblaCarousel<T>({
 
   return (
     <div className={clsx("relative", className)}>
-      <div
-        className={clsx("overflow-hidden", viewportClassName)}
-        ref={emblaRef}
-      >
+      <div className="overflow-hidden" ref={emblaRef}>
         <div className={clsx("flex touch-pan-y", containerClassName)}>
           {items.map((item, index) => (
             <div

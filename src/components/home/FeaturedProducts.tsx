@@ -46,7 +46,6 @@ export default function FeaturedProducts() {
           <EmblaCarousel
             items={filteredProducts}
             className="mx-auto max-w-6xl"
-            viewportClassName="py-2"
             containerClassName="-ml-6"
             slideClassName="flex-[0_0_auto] pl-6"
             renderItem={(product) => <ProductCard product={product} />}

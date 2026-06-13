@@ -13,7 +13,7 @@ export default function CategoryCard({ category, href }: CategoryCardProps) {
       href={href}
       className="group flex flex-col items-center gap-4 text-center cursor-pointer"
     >
-      <div className="relative h-12 w-12 sm:h-14 sm:w-14">
+      <div className="relative h-11 w-11 sm:h-14 sm:w-14">
         <Image
           src={category.icon}
           alt={category.name}

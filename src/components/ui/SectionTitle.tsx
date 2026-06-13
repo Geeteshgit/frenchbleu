@@ -20,7 +20,7 @@ export default function SectionTitle({
   return (
     <Container className={className}>
       <div className={clsx("max-w-3xl", centered && "mx-auto text-center")}>
-        <h2 className="text-xl font-medium tracking-tight text-foreground sm:text-2xl lg:text-3xl">
+        <h2 className="text-xl font-medium tracking-tight text-foreground md:text-2xl lg:text-3xl">
           {title}
         </h2>
         {subtitle ? (

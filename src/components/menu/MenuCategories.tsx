@@ -11,7 +11,7 @@ type MenuCategoriesProps = {
 
 export default function MenuCategories({ categories }: MenuCategoriesProps) {
   return (
-    <section className="py-14">
+    <section className="py-6 md:py-10">
       <SectionTitle
         title="Browse Our Categories"
         subtitle="Explore our full range of freshly baked treats, handcrafted for every occasion."
@@ -19,12 +19,12 @@ export default function MenuCategories({ categories }: MenuCategoriesProps) {
       />
 
       <Container className="mt-12">
-        <FadeUp y={24} className="relative">
+        <FadeUp className="relative">
           <EmblaCarousel
             items={categories}
             className="mx-auto max-w-7xl"
             containerClassName="-ml-6"
-            slideClassName="flex-[0_0_50%] pl-6 sm:flex-[0_0_33.3333%] md:flex-[0_0_25%] lg:flex-[0_0_14.2857%]"
+            slideClassName="pl-6 flex-[0_0_35%] md:flex-[0_0_25%] lg:flex-[0_0_15%]"
             renderItem={(category) => (
               <CategoryCard category={category} href={`#${category.id}`} />
             )}

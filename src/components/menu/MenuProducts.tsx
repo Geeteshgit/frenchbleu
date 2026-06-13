@@ -1,5 +1,4 @@
 import Container from "../ui/Container";
-import SectionTitle from "../ui/SectionTitle";
 import ProductCard from "../ui/ProductCard";
 import EmblaCarousel from "../ui/EmblaCarousel";
 import type { Product } from "@/types";
@@ -18,15 +17,15 @@ export default function MenuProducts({
   const hasProducts = products.length > 0;
 
   return (
-    <section id={categoryId} className="scroll-mt-24 py-12">
-      <SectionTitle title={categoryName} centered />
-
-      <Container className="mt-10">
+    <section id={categoryId} className="scroll-mt-24 pt-10">
+      <h2 className="text-lg font-semibold uppercase tracking-[0.22em] text-center text-muted-foreground md:text-2xl">
+        {categoryName}
+      </h2>
+      <Container className="mt-6 md:mt-10">
         {hasProducts ? (
           <EmblaCarousel
             items={products}
             className="mx-auto max-w-6xl"
-            viewportClassName="py-2"
             containerClassName="-ml-6"
             slideClassName="flex-[0_0_auto] pl-6"
             renderItem={(item) => <ProductCard product={item} />}

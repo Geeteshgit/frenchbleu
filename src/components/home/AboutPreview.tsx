@@ -5,7 +5,7 @@ import { aboutPreview } from "@/data/home";
 
 export default function AboutPreview() {
   return (
-    <section className="bg-card py-8">
+    <section className="bg-card py-6 md:py-10">
       <SectionTitle title={aboutPreview.title} centered />
 
       <Container className="mt-6">

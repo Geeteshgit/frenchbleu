@@ -24,7 +24,7 @@ export default function StoryBanner() {
       </div>
       <div className="absolute inset-y-0 right-0 hidden w-1/2 bg-[radial-gradient(circle_at_top_right,rgba(248,162,171,0.16),transparent_60%)] lg:block" />
       <Container banner>
-        <FadeUp y={24} className="relative z-10 mx-auto max-w-3xl text-center">
+        <FadeUp className="relative z-10 mx-auto max-w-3xl text-center">
           <p className="mt-4 text-xl font-light tracking-tight text-primary-foreground sm:text-3xl lg:text-4xl">
             {storyBanner.title}
           </p>

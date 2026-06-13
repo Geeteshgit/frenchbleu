@@ -11,11 +11,11 @@ export default function PopularCategories() {
   );
 
   return (
-    <section className="bg-background py-6">
+    <section className="bg-background py-6 md:py-10">
       <SectionTitle title={popularCategories.title} centered />
 
-      <Container className="mt-12">
-        <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-6">
+      <Container className="mt-8 md:mt-12">
+        <div className="grid grid-cols-3 gap-10 lg:gap-6 lg:grid-cols-6">
           {popularHomeCategories.map((category, index) => (
             <FadeUp key={category.id} delay={index * 0.08}>
               <CategoryCard category={category} href="/menu" />

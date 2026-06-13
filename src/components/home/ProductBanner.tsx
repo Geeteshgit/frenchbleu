@@ -5,15 +5,15 @@ import { productBanner } from "@/data/home";
 
 export default function ProductBanner() {
   return (
-    <section className="bg-primary">
-      <Container banner className="pt-18">
-        <div className="flex flex-col sm:flex-row items-center gap-8">
-          <div className="flex flex-col items-center sm:items-start gap-6 text-center sm:text-left">
-            <h2 className="text-2xl text-primary-foreground sm:text-4xl lg:text-5xl">
+    <section className="bg-primary pt-16 pb-8 lg:pt-20 lg:pb-12">
+      <Container banner>
+        <div className="flex flex-col lg:flex-row items-center gap-8">
+          <div className="flex flex-col items-center lg:items-start gap-6 text-center lg:text-left">
+            <h2 className="text-3xl text-primary-foreground md:text-4xl lg:text-5xl">
               {productBanner.title}
             </h2>
 
-            <p className="text-base text-primary-foreground sm:text-lg">
+            <p className="text-primary-foreground sm:text-lg">
               {productBanner.subtitle}
             </p>
 
@@ -22,7 +22,7 @@ export default function ProductBanner() {
             </Button>
           </div>
 
-          <div className="relative h-40 sm:h-80 w-full">
+          <div className="relative h-30 md:h-50 lg:h-60 w-full">
             <Image src={productBanner.image} alt="Macarons" fill />
           </div>
         </div>

@@ -22,9 +22,7 @@ export default function Navbar() {
         <Container banner className="flex items-center justify-between gap-4">
           {/* Logo */}
           <Link href="/">
-            <div className="font-logo text-3xl leading-none text-primary">
-              {brand.name}
-            </div>
+            <div className="font-logo text-3xl text-primary">{brand.name}</div>
           </Link>
 
           {/* Desktop Nav */}
@@ -53,7 +51,7 @@ export default function Navbar() {
             aria-label="Open menu"
             aria-expanded={open}
             onClick={() => setOpen((value) => !value)}
-            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/10 text-white transition hover:bg-white/15 sm:hidden"
+            className="inline-flex h-11 w-11 items-center justify-center  text-white transition sm:hidden"
           >
             <span className="sr-only">Toggle menu</span>
 

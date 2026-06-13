@@ -12,19 +12,18 @@ export default function Footer() {
         tone="text-background"
       />
       <Container banner className="flex flex-col gap-12 pb-8 pt-16">
-        <div className="grid gap-12 md:grid-cols-2 xl:grid-cols-5 xl:items-start">
-          <div className="md:col-span-2 xl:col-span-2">
+        <div className="grid gap-10 sm:grid-cols-3 xl:grid-cols-6">
+          <div className="flex flex-col gap-2 col-span-2 sm:col-span-3 xl:col-span-2">
             <div className="font-logo text-4xl text-white">{brand.name}</div>
-            <p className="mt-4 max-w-md text-sm text-white/80">
-              {brand.tagline}
-            </p>
+            <p className="max-w-md  text-white/80">{brand.tagline}</p>
 
-            <div className="mt-6 flex flex-wrap items-center gap-4">
+            <div className="flex flex-wrap items-center gap-2 mt-2">
+              <p className="text-white/80">Follow us on:</p>
               {socialLinks.map((social) => (
                 <Link
                   key={social.label}
                   href={social.href}
-                  className="font-bold text-white/80 transition hover:-translate-y-0.5 hover:text-white"
+                  className="text-white/80 transition hover:scale-105 hover:text-white"
                   aria-label={social.label}
                 >
                   <social.icon aria-hidden="true" className="text-xl" />
@@ -33,11 +32,11 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="xl:col-span-1">
+          <div>
             <h3 className="text-sm font-semibold uppercase tracking-[0.22em] text-white">
               {footerColumns[0].title}
             </h3>
-            <div className="mt-4 grid gap-3 text-sm text-white/80">
+            <div className="mt-4 flex flex-col items-start gap-3 text-sm text-white/80">
               {footerColumns[0].links.map((link) => (
                 <Link
                   key={link.label}
@@ -50,11 +49,11 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="xl:col-span-1">
+          <div>
             <h3 className="text-sm font-semibold uppercase tracking-[0.22em] text-white">
               {footerColumns[1].title}
             </h3>
-            <div className="mt-4 grid gap-3 text-sm text-white/80">
+            <div className="mt-4 flex flex-col items-start gap-3 text-sm text-white/80">
               {footerColumns[1].links.map((link) => (
                 <Link
                   key={link.label}
@@ -67,19 +66,21 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="xl:col-span-1">
+          <div className="col-span-2 sm:col-span-1 xl:col-span-2">
             <h3 className="text-sm font-semibold uppercase tracking-[0.22em] text-white">
               Contact
             </h3>
-            <div className="mt-4 grid gap-4">
+            <div className="mt-4 flex flex-col gap-4">
               {contactInfoCards.map((card) => (
                 <div
                   key={card.title}
                   className="flex gap-4 text-sm text-white/80"
                 >
-                  <card.icon aria-hidden="true" className="text-lg" />
-                  <div className="grid gap-2">
-                    <span className="sr-only">{card.title}</span>
+                  <card.icon
+                    aria-hidden="true"
+                    className="text-base lg:text-lg"
+                  />
+                  <div>
                     {card.details.map((detail) => (
                       <p key={detail}>{detail}</p>
                     ))}
@@ -91,10 +92,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/10 pt-6 text-sm text-white/80 text-center">
-          <p>
-            © 2026 FrenchBleu. All desserts and designs are made for joyful
-            moments.
-          </p>
+          <p>© 2026 FrenchBleu. Crafted for joy.</p>
         </div>
       </Container>
     </footer>

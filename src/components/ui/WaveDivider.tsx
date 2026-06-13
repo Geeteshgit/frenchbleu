@@ -23,7 +23,7 @@ export default function WaveDivider({
       <svg
         viewBox="0 0 1440 120"
         preserveAspectRatio="none"
-        className="absolute inset-0 h-full w-full rotate-180"
+        className="absolute h-full w-full rotate-180"
       >
         <path fill="currentColor" d={path} />
       </svg>
