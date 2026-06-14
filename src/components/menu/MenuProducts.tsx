@@ -21,6 +21,7 @@ export default function MenuProducts({
       <h2 className="text-lg font-semibold uppercase tracking-[0.22em] text-center text-muted-foreground md:text-2xl">
         {categoryName}
       </h2>
+
       <Container className="mt-6 md:mt-10">
         {hasProducts ? (
           <EmblaCarousel
