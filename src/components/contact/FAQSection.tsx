@@ -7,7 +7,7 @@ import { FaChevronDown } from "react-icons/fa6";
 
 export default function FAQSection() {
   return (
-    <section className="mt-8">
+    <section className="mt-4 sm:mt-8">
       <FadeUp>
         <SectionTitle
           title="Frequently Asked Questions"
@@ -16,7 +16,7 @@ export default function FAQSection() {
         />
       </FadeUp>
 
-      <Container className="mt-12 max-w-4xl">
+      <Container className="mt-8 sm:mt-12 max-w-4xl">
         <div className="grid gap-3">
           {faqItems.map((faq) => (
             <Card
@@ -24,7 +24,7 @@ export default function FAQSection() {
               className="overflow-hidden bg-primary text-primary-foreground"
             >
               <details className="group">
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 p-4 text-left text-xl font-medium">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 p-4 text-left text-base md:text-xl font-medium">
                   <span>{faq.question}</span>
 
                   <FaChevronDown

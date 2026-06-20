@@ -4,7 +4,7 @@ import FAQSection from "@/components/contact/FAQSection";
 
 const ContactPage = () => {
   return (
-    <main className="flex flex-col gap-16 pb-8">
+    <main className="flex flex-col gap-8 sm:gap-16 pb-8">
       <ContactHero />
       <ContactInfo />
       <FAQSection />
