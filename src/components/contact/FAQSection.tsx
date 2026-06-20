@@ -34,7 +34,9 @@ export default function FAQSection() {
                 </summary>
 
                 <div className="grid max-h-0 overflow-hidden transition-all duration-300 group-open:max-h-60">
-                  <p className="px-4 pb-4 text-base leading-8">{faq.answer}</p>
+                  <p className="px-4 pb-4 text-base md:text-lg leading-8">
+                    {faq.answer}
+                  </p>
                 </div>
               </details>
             </Card>

@@ -1,32 +1,53 @@
 import clsx from "clsx";
 
 type WaveDividerProps = {
-  path: string;
+  desktopPath: string;
+  mobilePath?: string;
   tone: string;
   className?: string;
 };
 
 export default function WaveDivider({
-  path,
+  desktopPath,
+  mobilePath,
   tone,
   className,
 }: WaveDividerProps) {
   return (
-    <div
-      className={clsx(
-        "relative z-50 h-8 overflow-hidden -mb-8",
-        tone,
-        className,
-      )}
-      aria-hidden="true"
-    >
-      <svg
-        viewBox="0 0 1440 120"
-        preserveAspectRatio="none"
-        className="absolute h-full w-full rotate-180"
+    <>
+      <div
+        className={clsx(
+          "relative z-50 h-8 overflow-hidden -mb-8 hidden md:block",
+          tone,
+          className,
+        )}
       >
-        <path fill="currentColor" d={path} />
-      </svg>
-    </div>
+        <svg
+          viewBox="0 0 1440 120"
+          preserveAspectRatio="none"
+          className="absolute h-full w-full rotate-180"
+        >
+          <path fill="currentColor" d={desktopPath} />
+        </svg>
+      </div>
+
+      {mobilePath && (
+        <div
+          className={clsx(
+            "relative z-50 h-8 overflow-hidden -mb-8 md:hidden",
+            tone,
+            className,
+          )}
+        >
+          <svg
+            viewBox="0 0 1440 120"
+            preserveAspectRatio="none"
+            className="absolute h-full w-full rotate-180"
+          >
+            <path fill="currentColor" d={mobilePath} />
+          </svg>
+        </div>
+      )}
+    </>
   );
 }
