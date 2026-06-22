@@ -14,7 +14,7 @@ export const productBanner = {
   subtitle:
     "Light almond shells, glossy fillings, and a perfectly playful presentation for gifting or events.",
   cta: "Browse macarons",
-  image: "/macarons.png",
+  image: "/macarons-banner.png",
 };
 
 export const splitPromoCopy = {
@@ -28,7 +28,7 @@ export const splitPromoCopy = {
     title: "A whimsical centerpiece.",
     subtitle: "Perfect for birthday parties.",
     cta: "Design a cake",
-    image: "/macarons.png",
+    image: "/macarons-banner.png",
   },
 };
 
@@ -42,7 +42,7 @@ export const aboutPreview = {
 };
 
 export const storyBanner = {
-  title: "Order desserts for your celebration worth remembering.",
-  leftImage: "/macarons.png",
-  rightImage: "/macarons.png",
+  title: "Desserts for celebrations worth remembering.",
+  leftImage: "/macarons-banner.png",
+  rightImage: "/macarons-banner.png",
 };

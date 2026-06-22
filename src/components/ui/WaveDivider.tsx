@@ -34,7 +34,7 @@ export default function WaveDivider({
       {mobilePath && (
         <div
           className={clsx(
-            "relative z-50 h-8 overflow-hidden -mb-8 md:hidden",
+            "relative z-50 h-6 overflow-hidden -mb-6 md:hidden",
             tone,
             className,
           )}

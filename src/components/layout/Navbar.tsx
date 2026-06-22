@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-999 w-full">
       {/* Navbar */}
-      <div className="bg-primary-foreground text-white py-4">
+      <div className="bg-primary-foreground text-white py-2 sm:py-4">
         <Container banner className="flex items-center justify-between gap-4">
           {/* Logo */}
           <Link href="/">

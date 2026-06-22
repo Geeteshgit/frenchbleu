@@ -2,34 +2,31 @@ import Image from "next/image";
 import Container from "../ui/Container";
 import FadeUp from "../animations/FadeUp";
 import { aboutHeroCopy } from "@/data/about";
+import HeroTitle from "../ui/HeroTitle";
+import ScaleIn from "../animations/ScaleIn";
 
 export default function AboutHero() {
   return (
-    <section className="bg-primary py-16 sm:py-20 lg:py-24">
-      <Container>
-        <div className="grid items-center gap-10 lg:grid-cols-[0.95fr_1.05fr]">
-          <FadeUp>
-            <h1 className="mt-6 text-5xl font-medium tracking-tight text-foreground sm:text-6xl lg:text-7xl">
-              {aboutHeroCopy.title}
-            </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-muted-foreground sm:text-xl">
+    <section className="bg-primary">
+      <Container className="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-8 py-12">
+        <div className="flex flex-col items-center gap-6 text-center">
+          <HeroTitle title={aboutHeroCopy.title} />
+          <FadeUp delay={0.1}>
+            <p className="max-w-xl text-lg text-primary-foreground sm:text-xl lg:text-2xl">
               {aboutHeroCopy.subtitle}
             </p>
           </FadeUp>
-
-          <FadeUp className="relative">
-            <div className="absolute inset-6 rounded-[2.5rem] bg-primary blur-3xl" />
-            <Image
-              src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?auto=format&fit=crop&w=1400&q=80"
-              alt="Elegant pastel bakery table"
-              width={1400}
-              height={900}
-              priority
-              sizes="(min-width: 1024px) 45vw, 100vw"
-              className="relative h-115 w-full rounded-[2.5rem] object-cover shadow-[0_25px_80px_rgba(248,162,171,0.22)]"
-            />
-          </FadeUp>
         </div>
+        <ScaleIn delay={0.1} scale={0.96}>
+          <div className="relative h-56 w-56 sm:h-84 sm:w-84 lg:h-104 lg:w-104">
+            <Image
+              src={aboutHeroCopy.image}
+              alt="Pastel cupcake"
+              priority
+              fill
+            />
+          </div>
+        </ScaleIn>
       </Container>
     </section>
   );

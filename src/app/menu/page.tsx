@@ -37,10 +37,10 @@ export default function MenuPage() {
   }, []);
 
   return (
-    <main className="bg-background pb-16">
+    <main className="bg-background flex flex-col gap-8 sm:gap-16 pb-8">
       <MenuHero />
       <MenuCategories categories={menuCategories} />
-      <div>
+      <section className="space-y-12 sm:space-y-18">
         {menuCategories.map((category) => {
           const categoryProducts = products.filter(
             (product) => product.category === category.name,
@@ -55,7 +55,7 @@ export default function MenuPage() {
             />
           );
         })}
-      </div>
+      </section>
     </main>
   );
 }

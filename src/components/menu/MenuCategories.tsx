@@ -11,7 +11,7 @@ type MenuCategoriesProps = {
 
 export default function MenuCategories({ categories }: MenuCategoriesProps) {
   return (
-    <section className="py-6 md:py-10">
+    <section>
       <SectionTitle
         title="Browse Our Categories"
         subtitle="Explore our full range of freshly baked treats, handcrafted for every occasion."

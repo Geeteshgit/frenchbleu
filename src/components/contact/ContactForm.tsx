@@ -7,12 +7,12 @@ const ContactForm = () => {
       <h2 className="text-3xl font-medium tracking-tight text-foreground sm:text-4xl">
         Get In Touch
       </h2>
-      <p className="mt-3 text-base leading-7 text-foreground">
+      <p className="mt-2 text-base leading-7 text-foreground">
         Tell us about your event, timeline, and dessert ideas. Our team will get
         back to you quickly.
       </p>
 
-      <form className="flex flex-col gap-4 mt-6">
+      <form className="flex flex-col gap-2 sm:gap-4 mt-6">
         <Input
           label="Name"
           type="text"

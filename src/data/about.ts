@@ -1,8 +1,9 @@
 export const aboutHeroCopy = {
-  title:
-    "A little bakery world built from pastel colors, slow craftsmanship, and joyful details.",
+  title: "Elegant Desserts, Crafted with Care",
   subtitle:
-    "We blend French-inspired technique with a modern boutique aesthetic to create desserts that feel luxurious, cute, and memorable.",
+    "We blend French-inspired techniques with a modern boutique aesthetic to create desserts that feel luxurious, delightful, and memorable.",
+  image:
+    "https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?auto=format&fit=crop&w=1400&q=80",
 };
 
 export const storyCopy = {

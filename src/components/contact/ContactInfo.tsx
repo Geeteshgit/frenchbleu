@@ -9,7 +9,7 @@ import { contactInfoCards } from "@/data/contact";
 
 export default function ContactInfo() {
   return (
-    <section className="bg-background">
+    <section className="bg-background overflow-x-hidden">
       <Container>
         <div className="grid items-start gap-8 lg:grid-cols-2 lg:gap-10 xl:gap-14">
           <div className="space-y-8">

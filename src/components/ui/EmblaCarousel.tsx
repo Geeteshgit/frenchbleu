@@ -66,7 +66,7 @@ export default function EmblaCarousel<T>({
             type="button"
             aria-label={prevLabel}
             onClick={scrollPrev}
-            className="absolute -left-5 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-sm border border-primary bg-background text-primary transition hover:bg-background cursor-pointer"
+            className="absolute -left-4 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-sm border border-primary bg-background text-primary transition hover:bg-background cursor-pointer"
           >
             <FaChevronLeft aria-hidden="true" />
           </button>
@@ -75,7 +75,7 @@ export default function EmblaCarousel<T>({
             type="button"
             aria-label={nextLabel}
             onClick={scrollNext}
-            className="absolute -right-5 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-sm border border-primary bg-background text-primary transition hover:bg-background cursor-pointer"
+            className="absolute -right-4 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-sm border border-primary bg-background text-primary transition hover:bg-background cursor-pointer"
           >
             <FaChevronRight aria-hidden="true" />
           </button>

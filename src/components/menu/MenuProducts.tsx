@@ -17,8 +17,8 @@ export default function MenuProducts({
   const hasProducts = products.length > 0;
 
   return (
-    <section id={categoryId} className="scroll-mt-24 pt-10">
-      <h2 className="text-lg font-semibold uppercase tracking-[0.22em] text-center text-muted-foreground md:text-2xl">
+    <section id={categoryId} className="scroll-mt-24 mt-10">
+      <h2 className="text-lg font-semibold uppercase tracking-[0.22em] text-center text-muted-foreground md:text-xl lg:text-2xl">
         {categoryName}
       </h2>
 

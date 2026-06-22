@@ -7,7 +7,7 @@ import { FaChevronDown } from "react-icons/fa6";
 
 export default function FAQSection() {
   return (
-    <section className="mt-4 sm:mt-8">
+    <section>
       <FadeUp>
         <SectionTitle
           title="Frequently Asked Questions"
@@ -28,7 +28,7 @@ export default function FAQSection() {
                   <span>{faq.question}</span>
 
                   <FaChevronDown
-                    className="h-5 w-5 shrink-0 transition-transform duration-300 group-open:rotate-180"
+                    className="h-5 w-5 transition-transform duration-300 group-open:rotate-180"
                     aria-hidden="true"
                   />
                 </summary>
