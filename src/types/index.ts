@@ -1,3 +1,4 @@
+import type { StaticImageData } from "next/image";
 import type { IconType } from "react-icons";
 
 export type NavItem = {
@@ -19,7 +20,7 @@ export type SocialLink = {
 export type Category = {
   id: string;
   name: string;
-  icon: string;
+  icon: StaticImageData;
   popular: boolean;
 };
 

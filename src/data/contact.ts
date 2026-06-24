@@ -1,10 +1,12 @@
 import type { FAQItem, InfoCard } from "../types";
 import { FaClock, FaEnvelope, FaPhone, FaLocationDot } from "react-icons/fa6";
+import contactHeroImage from "@/assets/contact-hero.png";
 
-export const contactHeroCopy = {
+export const contactHero = {
   title: "Contact Us",
   subtitle:
     "Custom cakes, macaron boxes, cupcake towers, and event dessert tables are all welcome.",
+  image: contactHeroImage,
 };
 
 export const contactInfoCards: InfoCard[] = [

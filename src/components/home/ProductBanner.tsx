@@ -22,8 +22,12 @@ export default function ProductBanner() {
             </Button>
           </div>
 
-          <div className="relative h-26 md:h-44 lg:h-52 w-full">
-            <Image src={productBanner.image} alt="Macarons" fill />
+          <div className="w-full lg:w-3/4">
+            <Image
+              src={productBanner.image}
+              alt="macarons-banner"
+              className="w-full h-auto"
+            />
           </div>
         </div>
       </Container>
