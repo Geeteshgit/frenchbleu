@@ -13,14 +13,14 @@ export default function ProductCard({ product }: ProductCardProps) {
         <div className="relative h-full w-full overflow-hidden">
           <Image
             src={product.image}
-            alt={product.title}
+            alt={product.name}
             fill
             className="object-cover transition duration-500 group-hover:scale-105"
           />
         </div>
       </Card>
 
-      <h3 className="text-center text-foreground">{product.title}</h3>
+      <h3 className="text-center text-foreground">{product.name}</h3>
     </article>
   );
 }

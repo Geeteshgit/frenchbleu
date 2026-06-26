@@ -24,28 +24,19 @@ export type Category = {
   popular: boolean;
 };
 
-export type GalleryCarouselSlide = {
-  id: number;
-  title: string;
-  description: string;
-  image: string;
-};
-
 export type ProductTag = "Best Sellers" | "New Arrivals";
 
 export type Product = {
-  title: string;
+  name: string;
   category: string;
-  image: string;
+  image: StaticImageData;
   tags?: ProductTag[];
 };
 
-export type GalleryItem = {
-  id: number;
-  title: string;
-  category: string;
+export type Hamper = {
+  name: string;
+  description: string;
   image: string;
-  size: "wide" | "tall" | "square";
 };
 
 export type Testimonial = {
@@ -53,14 +44,6 @@ export type Testimonial = {
   name: string;
   role: string;
   quote: string;
-  image: string;
-};
-
-export type TeamMember = {
-  id: number;
-  name: string;
-  role: string;
-  bio: string;
   image: string;
 };
 

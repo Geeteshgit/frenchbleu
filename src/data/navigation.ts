@@ -9,8 +9,8 @@ export const brand = {
 export const navigationLinks: NavItem[] = [
   { label: "Home", href: "/" },
   { label: "Menu", href: "/menu" },
+  { label: "Hampers", href: "/hampers" },
   { label: "About", href: "/about" },
-  { label: "Gallery", href: "/gallery" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -25,7 +25,7 @@ export const footerColumns: FooterColumn[] = [
       { label: "Menu", href: "/menu" },
       { label: "Cakes", href: "/menu" },
       { label: "Macarons", href: "/menu" },
-      { label: "Celebration Boxes", href: "/contact" },
+      { label: "Celebration Boxes", href: "/hampers" },
     ],
   },
 ];

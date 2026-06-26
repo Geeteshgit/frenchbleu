@@ -1,6 +1,8 @@
 import productBannerImage from "@/assets/product-banner.png";
 import homeHeroImage from "@/assets/home-hero.png";
 import storyBannerImage from "@/assets/story-banner.png";
+import customCakeImage from "@/assets/custom-cake.png";
+import customDessertBoxImage from "@/assets/custom-dessert-box.png";
 
 export const homeHero = {
   title: "FrenchBleu",
@@ -23,16 +25,18 @@ export const productBanner = {
 
 export const splitPromoCopy = {
   left: {
-    title: "Tiny pastel bites.",
-    subtitle: "Giftable cake pops.",
-    cta: "Order cake pops",
-    image: homeHeroImage,
+    title: "Gift the FrenchBleu Experience",
+    subtitle: "Build your own dessert box.",
+    cta: "Build Your Own Hamper",
+    href: "/hampers",
+    image: customDessertBoxImage,
   },
   right: {
-    title: "A whimsical centerpiece.",
-    subtitle: "Perfect for birthday parties.",
-    cta: "Design a cake",
-    image: productBannerImage,
+    title: "Your Vision, Beautifully Baked.",
+    subtitle: "Create a cake that's uniquely yours.",
+    cta: "Design A Cake",
+    href: "/contact",
+    image: customCakeImage,
   },
 };
 

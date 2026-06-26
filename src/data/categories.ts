@@ -1,13 +1,16 @@
 import type { Category } from "@/types";
 
-import cakesIcon from "@/assets/categories/cakes-icon.png";
-import cupcakesIcon from "@/assets/categories/cupcakes-icon.png";
-import pastriesIcon from "@/assets/categories/pastries-icon.png";
-import macaronsIcon from "@/assets/categories/macarons-icon.png";
-import cookiesIcon from "@/assets/categories/cookies-icon.png";
-import donutsIcon from "@/assets/categories/donuts-icon.png";
-import croissantsIcon from "@/assets/categories/croissants-icon.png";
-import browniesIcon from "@/assets/categories/brownies-icon.png";
+import cakesIcon from "@/assets/categories/cakes-icon.svg";
+import cupcakesIcon from "@/assets/categories/cupcakes-icon.svg";
+import pastriesIcon from "@/assets/categories/pastries-icon.svg";
+import macaronsIcon from "@/assets/categories/macarons-icon.svg";
+import cookiesIcon from "@/assets/categories/cookies-icon.svg";
+import donutsIcon from "@/assets/categories/donuts-icon.svg";
+import croissantsIcon from "@/assets/categories/croissants-icon.svg";
+import browniesIcon from "@/assets/categories/brownies-icon.svg";
+import chocolavaIcon from "@/assets/categories/chocolava-icon.svg";
+import rollsIcon from "@/assets/categories/rolls-icon.svg";
+import puffsIcon from "@/assets/categories/puffs-icon.svg";
 
 export const categories: Category[] = [
   {
@@ -41,27 +44,39 @@ export const categories: Category[] = [
     popular: false,
   },
   {
-    id: "patties",
-    name: "Patties",
-    icon: pastriesIcon,
-    popular: false,
-  },
-  {
     id: "donuts",
     name: "Donuts",
     icon: donutsIcon,
-    popular: true,
+    popular: false,
   },
   {
     id: "croissants",
     name: "Croissants",
     icon: croissantsIcon,
-    popular: true,
+    popular: false,
   },
   {
     id: "brownies",
     name: "Brownies",
     icon: browniesIcon,
     popular: true,
+  },
+  {
+    id: "chocolava",
+    name: "Chocolava",
+    icon: chocolavaIcon,
+    popular: true,
+  },
+  {
+    id: "rolls",
+    name: "Rolls",
+    icon: rollsIcon,
+    popular: true,
+  },
+  {
+    id: "puffs",
+    name: "Puffs",
+    icon: puffsIcon,
+    popular: false,
   },
 ];

@@ -37,7 +37,7 @@ export default function MenuPage() {
   }, []);
 
   return (
-    <main className="bg-background flex flex-col gap-8 sm:gap-16 pb-8">
+    <main className="bg-background flex flex-col gap-8 sm:gap-10 pb-8">
       <MenuHero />
       <MenuCategories categories={menuCategories} />
       <section className="space-y-12 sm:space-y-18">

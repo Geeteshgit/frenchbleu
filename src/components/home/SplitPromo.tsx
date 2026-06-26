@@ -9,6 +9,7 @@ export default function SplitPromo() {
           title={splitPromoCopy.left.title}
           subtitle={splitPromoCopy.left.subtitle}
           cta={splitPromoCopy.left.cta}
+          href={splitPromoCopy.left.href}
           image={splitPromoCopy.left.image}
           bgClassName="bg-primary"
           align="left"
@@ -18,6 +19,7 @@ export default function SplitPromo() {
           title={splitPromoCopy.right.title}
           subtitle={splitPromoCopy.right.subtitle}
           cta={splitPromoCopy.right.cta}
+          href={splitPromoCopy.right.href}
           image={splitPromoCopy.right.image}
           bgClassName="bg-secondary"
           align="right"
