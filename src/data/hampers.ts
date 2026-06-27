@@ -1,14 +1,23 @@
 import type { Hamper } from "../types";
 import hampersHeroImage from "@/assets/hampers-hero.png";
-import ribbon from "@/assets/personalization-icons/ribbon-icon.svg";
-import card from "@/assets/personalization-icons/card-icon.svg";
-import dessert from "@/assets/personalization-icons/dessert-icon.svg";
-import wallet from "@/assets/personalization-icons/wallet-icon.svg";
-import box from "@/assets/personalization-icons/box-icon.svg";
-import candle from "@/assets/personalization-icons/candle-icon.svg";
-import balloons from "@/assets/personalization-icons/balloons-icon.svg";
-import nametag from "@/assets/personalization-icons/nametag-icon.svg";
-import palette from "@/assets/personalization-icons/palette-icon.svg";
+import ribbon from "@/assets/personalisation-icons/ribbon-icon.svg";
+import card from "@/assets/personalisation-icons/card-icon.svg";
+import dessert from "@/assets/personalisation-icons/dessert-icon.svg";
+import wallet from "@/assets/personalisation-icons/wallet-icon.svg";
+import box from "@/assets/personalisation-icons/box-icon.svg";
+import candle from "@/assets/personalisation-icons/candle-icon.svg";
+import nametag from "@/assets/personalisation-icons/nametag-icon.svg";
+import palette from "@/assets/personalisation-icons/palette-icon.svg";
+import hamper1 from "@/assets/hampers/hamper-1.jpeg";
+import hamper2 from "@/assets/hampers/hamper-2.jpeg";
+import hamper3 from "@/assets/hampers/hamper-3.jpeg";
+import hamper4 from "@/assets/hampers/hamper-4.jpeg";
+import hamper5 from "@/assets/hampers/hamper-5.jpeg";
+import hamper6 from "@/assets/hampers/hamper-6.jpeg";
+import hamper7 from "@/assets/hampers/hamper-7.jpeg";
+import hamper8 from "@/assets/hampers/hamper-8.jpeg";
+import hamper9 from "@/assets/hampers/hamper-9.jpeg";
+import hamper10 from "@/assets/hampers/hamper-10.jpeg";
 
 export const hampersHero = {
   title: "Luxury Hampers",
@@ -18,7 +27,7 @@ export const hampersHero = {
   cta: "Contact to Customize",
 };
 
-export const personalizations = [
+export const personalisations = [
   {
     image: ribbon,
     title: "Ribbon Color",
@@ -55,66 +64,57 @@ export const personalizations = [
 
 export const hampers: Hamper[] = [
   {
-    name: "Rose Macaron Tower",
+    name: "The 'Thank You' I Could Never Put Into Words",
     description:
-      "A stunning tower of rose-flavored macarons, perfect for any special occasion.",
-    image:
-      "https://images.unsplash.com/photo-1509365465985-25d11c17e812?auto=format&fit=crop&w=1400&q=80",
+      "For the people who gave you everything and still say, \'You don\'t have to get us anything.",
+    image: hamper1,
   },
   {
-    name: "Velvet Cupcake Bouquet",
-    description:
-      "A delightful arrangement of velvety cupcakes, ideal for any celebration.",
-    image:
-      "https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=1400&q=80",
+    name: "Berry Romance",
+    description: "You Still Make My Heart Skip a Beat.",
+    image: hamper2,
   },
   {
-    name: "Celebration Cake Detail",
+    name: "Fresh Out of the Oven, Straight to the Heart",
     description:
-      "A beautiful detail of our celebration cake, perfect for any special occasion.",
-    image:
-      "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=1400&q=80",
+      "Because they have a way of making every house feel like home.",
+    image: hamper3,
   },
   {
-    name: "Sugared Donut Stack",
+    name: "A Hug, Beautifully Wrapped",
     description:
-      "A delightful stack of sugared donuts, perfect for any sweet craving.",
-    image:
-      "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?auto=format&fit=crop&w=1400&q=80",
+      "When your arms can't reach them, let this gift do the hugging.",
+    image: hamper5,
   },
   {
-    name: "Wedding Cake Swirls",
-    description:
-      "A beautiful swirl of our wedding cake, perfect for any special occasion.",
-    image:
-      "https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&w=1400&q=80",
+    name: "The Chocolate Emergency Kit",
+    description: "Because therapy is expensive, but chocolate is convincing.",
+    image: hamper8,
   },
   {
-    name: "Cookie Ribbon Tray",
-    description:
-      "A delightful arrangement of cookie ribbons, perfect for any sweet craving.",
-    image:
-      "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=1400&q=80",
+    name: "Just Because I Thought of You",
+    description: "No occasion. No reason. Just you.",
+    image: hamper4,
   },
   {
-    name: "Pastel Pastry Tray",
-    description:
-      "A delightful arrangement of pastel pastries, perfect for any sweet craving.",
-    image:
-      "https://images.unsplash.com/photo-1508737027454-e6454ef45afd?auto=format&fit=crop&w=1400&q=80",
+    name: "The Birthday Hero",
+    description: "Birthdays deserve more than just candles.",
+    image: hamper9,
   },
   {
-    name: "Baby Blue Macarons",
-    description:
-      "A delightful arrangement of baby blue macarons, perfect for any special occasion.",
-    image:
-      "https://images.unsplash.com/photo-1616690710400-7c3c1dba0f35?auto=format&fit=crop&w=1400&q=80",
+    name: "Let's Catch Up",
+    description: "Best enjoyed with tea and the people you've missed.",
+    image: hamper6,
   },
   {
-    name: "Cupcake Frosting Closeup",
+    name: "Let's Cancel Our Plans... and Eat This Instead",
+    description: "Made for conversations that last longer than the tea.",
+    image: hamper7,
+  },
+  {
+    name: "You Earned Every Bite",
     description:
-      "A delightful closeup of our cupcake frosting, perfect for any sweet craving.",
-    image:
-      "https://images.unsplash.com/photo-1606312619070-d48b4c652a52?auto=format&fit=crop&w=1400&q=80",
+      "For promotions, milestones and every victory worth celebrating.",
+    image: hamper10,
   },
 ];

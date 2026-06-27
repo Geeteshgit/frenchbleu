@@ -1,43 +1,44 @@
+import Image from "next/image";
 import Container from "../ui/Container";
-import Card from "../ui/Card";
 import FadeUp from "../animations/FadeUp";
 import { storyCopy } from "@/data/about";
+import ourStoryImage from "@/assets/our-story.png";
 
 export default function StorySection() {
   return (
-    <section className="bg-background py-20 sm:py-24">
+    <section className="bg-background py-10">
       <Container>
-        <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
+        <div className="flex flex-col lg:flex-row gap-12 lg:items-center">
           <FadeUp>
-            <h2 className="mt-5 text-4xl font-medium tracking-tight text-foreground sm:text-5xl">
-              From a tiny pastel studio to a full celebration bakery.
-            </h2>
-            <div className="mt-6 space-y-5 text-base leading-8 text-muted-foreground sm:text-lg">
-              {storyCopy.paragraphs.map((paragraph) => (
-                <p key={paragraph}>{paragraph}</p>
-              ))}
-            </div>
-
-            <div className="mt-8 grid gap-4 sm:grid-cols-3">
-              {storyCopy.metrics.map((metric) => (
-                <Card key={metric.label} className="bg-white p-5 text-center">
-                  <p className="text-3xl font-medium text-foreground">
-                    {metric.value}
-                  </p>
-                  <p className="mt-2 text-sm uppercase tracking-[0.2em] text-muted-foreground">
-                    {metric.label}
-                  </p>
-                </Card>
-              ))}
+            <div className="relative overflow-hidden rounded-sm">
+              <Image
+                src={ourStoryImage}
+                alt="FrenchBleu bakery"
+                className="h-full w-full object-cover"
+                priority
+              />
             </div>
           </FadeUp>
 
           <FadeUp delay={0.1} className="grid gap-6">
-            <Card className="bg-secondary p-6 sm:p-8">
-              <p className="mt-5 text-2xl leading-10 text-foreground sm:text-3xl">
-                {storyCopy.philosophy}
-              </p>
-            </Card>
+            <div>
+              <div className="inline-flex flex-col">
+                <p className="text-sm font-semibold uppercase tracking-[0.22em] text-secondary">
+                  Our Story
+                </p>
+                <span className="mt-1 h-0.5 w-1/6 rounded-full bg-secondary" />
+              </div>
+
+              <h2 className="mt-4 text-4xl font-medium tracking-tight text-foreground">
+                Born from a love for French pâtisserie.
+              </h2>
+
+              <div className="mt-6 space-y-4 text-base text-muted-foreground sm:text-lg">
+                {storyCopy.paragraphs.map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
+              </div>
+            </div>
           </FadeUp>
         </div>
       </Container>

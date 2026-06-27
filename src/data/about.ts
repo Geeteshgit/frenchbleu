@@ -1,15 +1,17 @@
+import hero from "@/assets/hampers-hero.png";
+
 export const aboutHeroCopy = {
-  title: "Elegant Desserts, Crafted with Care",
+  title: "FrenchBleu",
   subtitle:
     "We blend French-inspired techniques with a modern boutique aesthetic to create desserts that feel luxurious, delightful, and memorable.",
-  image:
-    "https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?auto=format&fit=crop&w=1400&q=80",
+  image: hero,
 };
 
 export const storyCopy = {
   paragraphs: [
-    "FrenchBleu began as a tiny studio where every box was wrapped by hand and every shell was piped one by one. The goal was simple: make dessert feel like a beautifully styled gift.",
-    "Today, the bakery has grown into a full celebration dessert house, crafting cakes, macarons, cupcakes, and showpieces that balance elegance with a soft, playful spirit.",
+    "FrenchBleu was created with a simple belief - that every dessert has the power to turn ordinary moments into beautiful memories.",
+    "Inspired by the elegance of French patisserie, we handcraft every dessert with the finest ingredients, attention to detail, and a whole lot of love.",
+    "Whether it's a celebration or a quiet moment for yourself, we're here to add a little sweetness to your story.",
   ],
   metrics: [
     { label: "Signature recipes", value: "28" },

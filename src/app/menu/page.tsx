@@ -6,6 +6,7 @@ import { products } from "@/data/products";
 import MenuHero from "@/components/menu/MenuHero";
 import MenuProducts from "@/components/menu/MenuProducts";
 import MenuCategories from "@/components/menu/MenuCategories";
+import MenuProductsContainer from "@/components/menu/MenuProductsContainer";
 
 const menuCategories = categories;
 
@@ -40,22 +41,7 @@ export default function MenuPage() {
     <main className="bg-background flex flex-col gap-8 sm:gap-10 pb-8">
       <MenuHero />
       <MenuCategories categories={menuCategories} />
-      <section className="space-y-12 sm:space-y-18">
-        {menuCategories.map((category) => {
-          const categoryProducts = products.filter(
-            (product) => product.category === category.name,
-          );
-
-          return (
-            <MenuProducts
-              key={category.id}
-              categoryId={category.id}
-              categoryName={category.name}
-              products={categoryProducts}
-            />
-          );
-        })}
-      </section>
+      <MenuProductsContainer />
     </main>
   );
 }

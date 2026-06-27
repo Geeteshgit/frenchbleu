@@ -2,16 +2,16 @@ import Image from "next/image";
 import Container from "../ui/Container";
 import SectionTitle from "../ui/SectionTitle";
 import FadeUp from "../animations/FadeUp";
-import { personalizations } from "@/data/hampers";
+import { personalisations } from "@/data/hampers";
 
-export default function PersonalizationsBanner() {
+export default function PersonalisationsBanner() {
   return (
-    <section className="bg-card py-6 md:py-10">
-      <SectionTitle title="Personalization Options" centered />
+    <section className="bg-card py-10">
+      <SectionTitle title="Personalisation Options" centered />
 
       <Container className="mt-8 md:mt-10">
         <div className="grid grid-cols-2 gap-8 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-8">
-          {personalizations.map((item, index) => (
+          {personalisations.map((item, index) => (
             <FadeUp key={item.title} delay={index * 0.08}>
               <div className="flex flex-col items-center text-center">
                 <div className="relative h-10 w-10">

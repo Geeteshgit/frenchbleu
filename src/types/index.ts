@@ -36,7 +36,7 @@ export type Product = {
 export type Hamper = {
   name: string;
   description: string;
-  image: string;
+  image: StaticImageData;
 };
 
 export type Testimonial = {

@@ -34,8 +34,8 @@ H0
 Z"
       />
       <Container banner className="flex flex-col gap-12 pb-8 pt-16">
-        <div className="grid gap-10 sm:grid-cols-3 xl:grid-cols-6">
-          <div className="flex flex-col gap-2 col-span-2 sm:col-span-3 xl:col-span-2">
+        <div className="grid gap-10 grid-cols-2 xl:grid-cols-4">
+          <div className="flex flex-col gap-2 col-span-2 xl:col-span-2">
             <div className="font-logo text-4xl text-white">{brand.name}</div>
             <p className="max-w-md  text-white/80">{brand.tagline}</p>
 
@@ -54,7 +54,7 @@ Z"
             </div>
           </div>
 
-          <div>
+          <div className="col-span-2 sm:col-span-1">
             <h3 className="text-sm font-semibold uppercase tracking-[0.22em] text-white">
               {footerColumns[0].title}
             </h3>
@@ -70,25 +70,7 @@ Z"
               ))}
             </div>
           </div>
-
-          <div>
-            <h3 className="text-sm font-semibold uppercase tracking-[0.22em] text-white">
-              {footerColumns[1].title}
-            </h3>
-            <div className="mt-4 flex flex-col items-start gap-3 text-sm text-white/80">
-              {footerColumns[1].links.map((link) => (
-                <Link
-                  key={link.label}
-                  href={link.href}
-                  className="transition hover:text-primary"
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          <div className="col-span-2 sm:col-span-1 xl:col-span-2">
+          <div className="col-span-2 sm:col-span-1">
             <h3 className="text-sm font-semibold uppercase tracking-[0.22em] text-white">
               Contact
             </h3>

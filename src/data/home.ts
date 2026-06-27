@@ -27,7 +27,7 @@ export const splitPromoCopy = {
   left: {
     title: "Gift the FrenchBleu Experience",
     subtitle: "Build your own dessert box.",
-    cta: "Build Your Own Hamper",
+    cta: "Shop Hampers",
     href: "/hampers",
     image: customDessertBoxImage,
   },

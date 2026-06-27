@@ -19,15 +19,6 @@ export const footerColumns: FooterColumn[] = [
     title: "Explore",
     links: navigationLinks,
   },
-  {
-    title: "Catalog",
-    links: [
-      { label: "Menu", href: "/menu" },
-      { label: "Cakes", href: "/menu" },
-      { label: "Macarons", href: "/menu" },
-      { label: "Celebration Boxes", href: "/hampers" },
-    ],
-  },
 ];
 
 export const socialLinks: SocialLink[] = [
