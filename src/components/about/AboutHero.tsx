@@ -18,7 +18,7 @@ export default function AboutHero() {
           </FadeUp>
         </div>
         <ScaleIn delay={0.1} scale={0.96}>
-          <div className="">
+          <div>
             <Image
               src={aboutHeroCopy.image}
               alt="Pastel cupcake"
