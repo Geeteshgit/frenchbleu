@@ -18,11 +18,13 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-999 w-full">
       {/* Navbar */}
-      <div className="bg-primary-foreground text-white py-2 sm:py-4">
+      <div className="bg-[#fffdf5] text-white py-2 sm:py-4">
         <Container banner className="flex items-center justify-between gap-4">
           {/* Logo */}
           <Link href="/">
-            <div className="font-logo text-3xl text-primary">{brand.name}</div>
+            <div className="font-logo text-3xl text-[#141f8f]">
+              {brand.name}
+            </div>
           </Link>
 
           {/* Desktop Nav */}
@@ -34,10 +36,7 @@ export default function Navbar() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={clsx(
-                    "text-lg font-semibold transition duration-300",
-                    active ? "text-primary" : "text-white hover:text-primary",
-                  )}
+                  className="text-lg font-semibold transition duration-300 text-[#141f8f]"
                 >
                   {item.label}
                 </Link>
@@ -85,7 +84,7 @@ export default function Navbar() {
 
       {/* Wave */}
       <WaveDivider
-        tone="text-primary-foreground"
+        tone="text-[#fffdf5]"
         desktopPath="M0 60 Q 10 20 20 60 T 40 60 T 60 60 T 80 60 T 100 60 T 120 60 T 140 60 T 160 60 T 180 60 T 200 60 T 220 60 T 240 60 T 260 60 T 280 60 T 300 60 T 320 60 T 340 60 T 360 60 T 380 60 T 400 60 T 420 60 T 440 60 T 460 60 T 480 60 T 500 60 T 520 60 T 540 60 T 560 60 T 580 60 T 600 60 T 620 60 T 640 60 T 660 60 T 680 60 T 700 60 T 720 60 T 740 60 T 760 60 T 780 60 T 800 60 T 820 60 T 840 60 T 860 60 T 880 60 T 900 60 T 920 60 T 940 60 T 960 60 T 980 60 T 1000 60 T 1020 60 T 1040 60 T 1060 60 T 1080 60 T 1100 60 T 1120 60 T 1140 60 T 1160 60 T 1180 60 T 1200 60 T 1220 60 T 1240 60 T 1260 60 T 1280 60 T 1300 60 T 1320 60 T 1340 60 T 1360 60 T 1380 60 T 1400 60 T 1420 60 T 1440 60 L1440 120 L0 120 Z"
         mobilePath="M0 60
 Q30 20 60 60
