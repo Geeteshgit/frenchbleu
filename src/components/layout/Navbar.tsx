@@ -22,7 +22,9 @@ export default function Navbar() {
         <Container banner className="flex items-center justify-between gap-4">
           {/* Logo */}
           <Link href="/">
-            <div className="font-logo text-4xl text-brand">{brand.name}</div>
+            <div className="font-logo text-3xl md:text-4xl text-brand">
+              {brand.name}
+            </div>
           </Link>
 
           {/* Desktop Nav */}
