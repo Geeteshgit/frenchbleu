@@ -32,7 +32,6 @@ export default function PromoPane({
         )}
       >
         <div className="flex w-full flex-col items-center gap-5 lg:gap-10 lg:flex-row text-center lg:text-left">
-          {/* Content */}
           <div className="flex flex-col gap-4 lg:gap-6">
             <h3 className="text-3xl font-medium lg:font-normal text-primary-foreground lg:text-5xl">
               {title}
@@ -52,7 +51,6 @@ export default function PromoPane({
             </div>
           </div>
 
-          {/* Image */}
           <div>
             <Image src={image} alt={title} className="h-auto w-full" />
           </div>

@@ -1,4 +1,4 @@
-import { splitPromoCopy } from "@/data/home";
+import { splitPromo } from "@/data/home";
 import PromoPane from "./PromoPane";
 
 export default function SplitPromo() {
@@ -6,21 +6,21 @@ export default function SplitPromo() {
     <section className="overflow-hidden">
       <div className="grid grid-cols-1 md:grid-cols-2">
         <PromoPane
-          title={splitPromoCopy.left.title}
-          subtitle={splitPromoCopy.left.subtitle}
-          cta={splitPromoCopy.left.cta}
-          href={splitPromoCopy.left.href}
-          image={splitPromoCopy.left.image}
+          title={splitPromo.left.title}
+          subtitle={splitPromo.left.subtitle}
+          cta={splitPromo.left.cta}
+          href={splitPromo.left.href}
+          image={splitPromo.left.image}
           bgClassName="bg-primary"
           align="left"
         />
 
         <PromoPane
-          title={splitPromoCopy.right.title}
-          subtitle={splitPromoCopy.right.subtitle}
-          cta={splitPromoCopy.right.cta}
-          href={splitPromoCopy.right.href}
-          image={splitPromoCopy.right.image}
+          title={splitPromo.right.title}
+          subtitle={splitPromo.right.subtitle}
+          cta={splitPromo.right.cta}
+          href={splitPromo.right.href}
+          image={splitPromo.right.image}
           bgClassName="bg-secondary"
           align="right"
         />

@@ -23,7 +23,7 @@ export const productBanner = {
   image: productBannerImage,
 };
 
-export const splitPromoCopy = {
+export const splitPromo = {
   left: {
     title: "Gift the FrenchBleu Experience",
     subtitle: "Build your own dessert box.",
