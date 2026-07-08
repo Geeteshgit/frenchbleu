@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { homeHero } from "@/data/home";
+import homeHeroImage from "@/assets/home-hero.png";
 import ScaleIn from "../animations/ScaleIn";
 import FadeUp from "../animations/FadeUp";
 import Container from "../ui/Container";
@@ -10,17 +10,19 @@ export default function HomeHero() {
     <section className="bg-primary">
       <Container className="flex flex-col md:flex-row justify-between items-center md:gap-20 pt-12 md:pt-10 md:pb-6 lg:pt-0 lg:pb-4">
         <div className="flex flex-col gap-6 text-center">
-          <HeroTitle title={homeHero.title} />
+          <HeroTitle title="FrenchBleu" />
           <FadeUp delay={0.1}>
             <p className="max-w-xl text-lg text-primary-foreground sm:text-xl lg:text-2xl">
-              {homeHero.subtitle}
+              Handcrafted desserts, editorial presentation, and a playful
+              boutique mood designed to feel indulgent, airy, and irresistibly
+              cute
             </p>
           </FadeUp>
         </div>
         <ScaleIn delay={0.1} scale={0.96}>
-          <div className="">
+          <div>
             <Image
-              src={homeHero.image}
+              src={homeHeroImage}
               alt="cupcakes"
               className="h-auto w-full"
               priority

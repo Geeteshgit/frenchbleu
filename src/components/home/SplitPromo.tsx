@@ -1,7 +1,25 @@
-import { splitPromo } from "@/data/home";
 import PromoPane from "./PromoPane";
+import customCakeImage from "@/assets/custom-cake.png";
+import customDessertBoxImage from "@/assets/custom-dessert-box.png";
 
 export default function SplitPromo() {
+  const splitPromo = {
+    left: {
+      title: "Gift the FrenchBleu Experience",
+      subtitle: "Build your own dessert box.",
+      cta: "Shop Hampers",
+      href: "/hampers",
+      image: customDessertBoxImage,
+    },
+    right: {
+      title: "Your Vision, Beautifully Baked.",
+      subtitle: "Create a cake that's uniquely yours.",
+      cta: "Design A Cake",
+      href: "/contact",
+      image: customCakeImage,
+    },
+  };
+
   return (
     <section className="overflow-hidden">
       <div className="grid grid-cols-1 md:grid-cols-2">

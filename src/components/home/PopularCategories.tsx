@@ -2,7 +2,6 @@ import Container from "../ui/Container";
 import SectionTitle from "../ui/SectionTitle";
 import CategoryCard from "../ui/CategoryCard";
 import { categories } from "@/data/categories";
-import { popularCategories } from "@/data/home";
 import FadeUp from "../animations/FadeUp";
 
 export default function PopularCategories() {
@@ -12,7 +11,7 @@ export default function PopularCategories() {
 
   return (
     <section className="bg-background py-6 md:py-10">
-      <SectionTitle title={popularCategories.title} centered />
+      <SectionTitle title="Popular Categories" centered />
 
       <Container className="mt-8 md:mt-12">
         <div className="grid grid-cols-3 gap-10 lg:gap-6 lg:grid-cols-6">
