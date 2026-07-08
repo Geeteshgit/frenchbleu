@@ -1,5 +1,4 @@
 import type { Hamper } from "../types";
-import hampersHeroImage from "@/assets/hampers-hero.png";
 import ribbon from "@/assets/personalisation-icons/ribbon-icon.svg";
 import card from "@/assets/personalisation-icons/card-icon.svg";
 import dessert from "@/assets/personalisation-icons/dessert-icon.svg";
@@ -18,14 +17,6 @@ import hamper7 from "@/assets/hampers/hamper-7.jpeg";
 import hamper8 from "@/assets/hampers/hamper-8.jpeg";
 import hamper9 from "@/assets/hampers/hamper-9.jpeg";
 import hamper10 from "@/assets/hampers/hamper-10.jpeg";
-
-export const hampersHero = {
-  title: "Luxury Hampers",
-  subtitle:
-    "Every FrenchBleu hamper is thoughtfully handcrafted and customized to suit your celebration. Speak with our gifting experts to create something truly memorable.",
-  image: hampersHeroImage,
-  cta: "Contact to Customize",
-};
 
 export const personalisations = [
   {

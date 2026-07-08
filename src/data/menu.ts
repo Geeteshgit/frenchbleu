@@ -6,12 +6,6 @@ import chocolateSticker from "@/assets/chocolate-sticker.png";
 import croissantSticker from "@/assets/croissant-sticker.png";
 import macaronSticker from "@/assets/macaron-sticker.png";
 
-export const menuHero = {
-  title: "Our Menu",
-  subtitle:
-    "Explore our full range of freshly baked treats, handcrafted for every occasion.",
-};
-
 export const menuHeroStickers = [
   {
     src: cookieSticker,

@@ -6,17 +6,6 @@ export type NavItem = {
   href: string;
 };
 
-export type FooterColumn = {
-  title: string;
-  links: NavItem[];
-};
-
-export type SocialLink = {
-  label: string;
-  href: string;
-  icon: IconType;
-};
-
 export type Category = {
   id: string;
   name: string;
@@ -39,20 +28,12 @@ export type Hamper = {
   image: StaticImageData;
 };
 
-export type Testimonial = {
-  id: number;
-  name: string;
-  role: string;
-  quote: string;
-  image: string;
-};
-
 export type FAQItem = {
   question: string;
   answer: string;
 };
 
-export type InfoCard = {
+export type Info = {
   title: string;
   details: string[];
   icon: IconType;

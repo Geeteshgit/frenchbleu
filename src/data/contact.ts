@@ -1,15 +1,7 @@
-import type { FAQItem, InfoCard } from "../types";
+import type { FAQItem, Info } from "../types";
 import { FaClock, FaEnvelope, FaPhone, FaLocationDot } from "react-icons/fa6";
-import contactHeroImage from "@/assets/contact-hero.png";
 
-export const contactHero = {
-  title: "Contact Us",
-  subtitle:
-    "Custom cakes, macaron boxes, cupcake towers, and event dessert tables are all welcome.",
-  image: contactHeroImage,
-};
-
-export const contactInfoCards: InfoCard[] = [
+export const contactInfo: Info[] = [
   {
     title: "Phone",
     details: ["+91 8745125698"],
@@ -54,9 +46,3 @@ export const faqItems: FAQItem[] = [
       "Yes, local delivery is available for larger orders and special event desserts.",
   },
 ];
-
-export const contactSocialCopy = {
-  title: "Follow the bakery mood online",
-  subtitle:
-    "See new bakes, packaging details, and behind-the-scenes decorating moments.",
-};

@@ -9,7 +9,7 @@ import Container from "../ui/Container";
 import WaveDivider from "../ui/WaveDivider";
 import MobileMenu from "./MobileMenu";
 
-import { brand, navigationLinks } from "@/data/navigation";
+import { navigationLinks } from "@/data/navigation";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -23,7 +23,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/">
             <div className="font-logo text-3xl md:text-4xl text-brand">
-              {brand.name}
+              FrenchBleu
             </div>
           </Link>
 

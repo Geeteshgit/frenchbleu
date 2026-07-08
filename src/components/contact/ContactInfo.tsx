@@ -5,7 +5,7 @@ import FadeIn from "../animations/FadeIn";
 import SlideIn from "../animations/SlideIn";
 import ContactForm from "./ContactForm";
 import LocationMap from "./LocationMap";
-import { contactInfoCards } from "@/data/contact";
+import { contactInfo } from "@/data/contact";
 
 export default function ContactInfo() {
   return (
@@ -14,7 +14,7 @@ export default function ContactInfo() {
         <div className="grid items-start gap-8 lg:grid-cols-2 lg:gap-10 xl:gap-14">
           <div className="space-y-8">
             <div className="grid gap-2 sm:gap-4 grid-cols-1 sm:grid-cols-2">
-              {contactInfoCards.map((card, index) => (
+              {contactInfo.map((card, index) => (
                 <FadeUp key={card.title} delay={index * 0.08}>
                   <Card className="h-full flex-col border-0 bg-secondary/20 px-4 py-4 text-center rounded-xl">
                     <card.icon

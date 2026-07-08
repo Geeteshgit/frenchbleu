@@ -2,7 +2,7 @@ import Image from "next/image";
 import FadeUp from "../animations/FadeUp";
 import Container from "../ui/Container";
 import HeroTitle from "../ui/HeroTitle";
-import { menuHero, menuHeroStickers } from "@/data/menu";
+import { menuHeroStickers } from "@/data/menu";
 
 export default function MenuHero() {
   return (
@@ -19,11 +19,12 @@ export default function MenuHero() {
 
       <Container>
         <div className="relative z-10 flex flex-col items-center gap-3 text-center">
-          <HeroTitle title={menuHero.title} />
+          <HeroTitle title="Our Menu" />
 
           <FadeUp delay={0.1}>
             <p className="max-w-4xl text-base text-primary-foreground sm:text-lg md:text-xl">
-              {menuHero.subtitle}
+              Explore our full range of freshly baked treats, handcrafted for
+              every occasion.
             </p>
           </FadeUp>
         </div>

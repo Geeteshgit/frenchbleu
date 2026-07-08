@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Container from "../ui/Container";
 import FadeUp from "../animations/FadeUp";
-import { storyCopy } from "@/data/about";
+import { story } from "@/data/about";
 import ourStoryImage from "@/assets/our-story.png";
 
 export default function StorySection() {
@@ -34,7 +34,7 @@ export default function StorySection() {
               </h2>
 
               <div className="mt-6 space-y-4 text-base text-muted-foreground sm:text-lg">
-                {storyCopy.paragraphs.map((paragraph) => (
+                {story.paragraphs.map((paragraph) => (
                   <p key={paragraph}>{paragraph}</p>
                 ))}
               </div>
