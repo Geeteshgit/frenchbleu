@@ -9,7 +9,7 @@ export const contactInfo: Info[] = [
   },
   {
     title: "Email",
-    details: ["frenchbleu2025@gmail.com"],
+    details: ["frenchbleubakery@gmail.com"],
     icon: FaEnvelope,
   },
   {
