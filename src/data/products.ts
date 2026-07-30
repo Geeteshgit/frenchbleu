@@ -1,25 +1,77 @@
 import type { Product } from "../types";
 import brownie1 from "@/assets/products/brownie-1.jpg";
 import chocolavaCake from "@/assets/products/chocolava-cake.png";
-import tiramisuCake from "@/assets/products/tiramisu-cake.jpg";
-import creamRoll1 from "@/assets/products/cream-roll-1.png";
-import chocolateTruffleCake1 from "@/assets/products/chocolate-truffle-cake-1.png";
-import AalooPuff from "@/assets/products/aaloo-puff.jpg";
+import blackForestCake from "@/assets/products/cake-black-forest.webp";
+import whhiteForestCake from "@/assets/products/cake-white-forest.webp";
+import chocolateTruffleCake from "@/assets/products/cake-chocolate-truffle.webp";
+import pineappleCake from "@/assets/products/cake-pineapple.avif";
+import butterscotchCake from "@/assets/products/cake-butterscotch.jpg";
+import redVelvetCake from "@/assets/products/cake-red-velvet.webp";
+import vanillaCake from "@/assets/products/cake-vanilla.webp";
+import whiteForestPastry from "@/assets/products/pastry-white-forest.jpeg";
+import blackForestPastry from "@/assets/products/pastry-black-forest.webp";
+import cheesecakePastry from "@/assets/products/pastry-cheesecake.webp";
+import chocolateTrufflePastry from "@/assets/products/pastry-chocolate-truffle.avif";
+import redVelvetPastry from "@/assets/products/pastry-red-velvet.webp";
+import chocoVanillaOreoPastry from "@/assets/products/pastry-choco-vanilla-oreo.jpeg";
+import doubleChocochipPastry from "@/assets/products/pastry-double-chocochip.jpeg";
+import blueberrypastry from "@/assets/products/pastry-blueberry.webp";
+import aalooPuff from "@/assets/products/puff-aaloo.jpg";
+import chocolateFrostedDonut from "@/assets/products/donut-chocolate-frosted.jpg";
+import chocolateGlazedDonut from "@/assets/products/donut-chocolate-glazed.jpg";
+import bakedDonuts from "@/assets/products/donut-baked.jpg";
+import butterCroissant from "@/assets/products/croissant-butter.jpg";
 
 export const featuredTabs = ["Best Sellers", "New Arrivals"] as const;
 
 export const products: Product[] = [
   {
+    name: "Chocolate Truffle Cake",
+    category: "Cakes",
+    image: chocolateTruffleCake,
+    tags: ["Best Sellers"],
+  },
+  {
+    name: "Black Forest Cake",
+    category: "Cakes",
+    image: blackForestCake,
+    tags: ["Best Sellers"],
+  },
+  {
+    name: "White Forest Cake",
+    category: "Cakes",
+    image: whhiteForestCake,
+    tags: ["Best Sellers"],
+  },
+  {
+    name: "Pineapple Cake",
+    category: "Cakes",
+    image: pineappleCake,
+    tags: ["Best Sellers"],
+  },
+  {
+    name: "Butterscotch Cake",
+    category: "Cakes",
+    image: butterscotchCake,
+    tags: ["Best Sellers"],
+  },
+  {
+    name: "Red Velvet Cake",
+    category: "Cakes",
+    image: redVelvetCake,
+    tags: ["Best Sellers"],
+  },
+  {
+    name: "Vanilla Cake",
+    category: "Cakes",
+    image: vanillaCake,
+    tags: ["Best Sellers"],
+  },
+  {
     name: "Chocolate Brownie",
     category: "Brownies",
     image: brownie1,
     tags: ["Best Sellers", "New Arrivals"],
-  },
-  {
-    name: "Tiramisu Cake",
-    category: "Cakes",
-    image: tiramisuCake,
-    tags: ["Best Sellers"],
   },
   {
     name: "Chocolava Cake",
@@ -28,80 +80,64 @@ export const products: Product[] = [
     tags: ["Best Sellers"],
   },
   {
-    name: "Chocolate Cream Roll",
-    category: "Rolls",
-    image: creamRoll1,
+    name: "Chocolate Truffle Pastry",
+    category: "Pastries",
+    image: chocolateTrufflePastry,
     tags: ["Best Sellers"],
   },
   {
-    name: "Chocolate Truffle Cake",
-    category: "Cakes",
-    image: chocolateTruffleCake1,
+    name: "White Forest Pastry",
+    category: "Pastries",
+    image: whiteForestPastry,
     tags: ["Best Sellers"],
   },
   {
-    name: "Chocolate Croissant",
-    category: "Cakes",
-    image: brownie1,
+    name: "Black Forest Pastry",
+    category: "Pastries",
+    image: blackForestPastry,
+    tags: ["Best Sellers"],
+  },
+  {
+    name: "Red Velvet Pastry",
+    category: "Pastries",
+    image: redVelvetPastry,
+    tags: ["Best Sellers"],
+  },
+  {
+    name: "Cheesecake Pastry",
+    category: "Pastries",
+    image: cheesecakePastry,
+    tags: ["Best Sellers"],
+  },
+  {
+    name: "Choco Vanilla Oreo Pastry",
+    category: "Pastries",
+    image: chocoVanillaOreoPastry,
     tags: ["New Arrivals"],
   },
   {
-    name: "Aaloo Puff",
-    category: "Puffs",
-    image: AalooPuff,
-    tags: ["New Arrivals", "Best Sellers"],
-  },
-  {
-    name: "Cherry Cream Donuts",
-    category: "Donuts",
-    image: brownie1,
+    name: "Double Chocochip Pastry",
+    category: "Pastries",
+    image: doubleChocochipPastry,
     tags: ["New Arrivals"],
   },
   {
-    name: "Vanilla Bean Croissant",
-    category: "Croissants",
-    image: brownie1,
+    name: "Blueberry Pastry",
+    category: "Pastries",
+    image: blueberrypastry,
     tags: ["New Arrivals"],
-  },
-  {
-    name: "Vanilla Cloud Cake",
-    category: "Cakes",
-    image: brownie1,
-  },
-  {
-    name: "Berry Ribbon Cake",
-    category: "Cakes",
-    image: brownie1,
-  },
-  {
-    name: "Lemon Silk Cake",
-    category: "Cakes",
-    image: brownie1,
-  },
-  {
-    name: "Strawberry Whisper Cake",
-    category: "Cakes",
-    image: brownie1,
-  },
-  {
-    name: "Lavender Velvet Cake",
-    category: "Cakes",
-    image: brownie1,
-  },
-  {
-    name: "Blueberry Meadow Cake",
-    category: "Cakes",
-    image: brownie1,
   },
   {
     name: "Vanilla Blossom Cupcake",
     category: "Cupcakes",
     image: brownie1,
+    tags: ["New Arrivals"],
   },
   {
     name: "Salted Caramel Cupcake",
     category: "Cupcakes",
     image: brownie1,
+    tags: ["New Arrivals"],
   },
   {
     name: "Chocolate Cloud Cupcake",
@@ -154,33 +190,33 @@ export const products: Product[] = [
     image: brownie1,
   },
   {
-    name: "Vanilla Twist Pastry",
-    category: "Pastries",
-    image: brownie1,
+    name: "Chocolate Frosted Donut",
+    category: "Donuts",
+    image: chocolateFrostedDonut,
+    tags: ["Best Sellers"],
   },
   {
-    name: "Berry Puff Pastry",
-    category: "Pastries",
-    image: brownie1,
+    name: "Chocolate Glazed Donut",
+    category: "Donuts",
+    image: chocolateGlazedDonut,
+    tags: ["New Arrivals"],
   },
   {
-    name: "Cinnamon Cream Pastry",
-    category: "Pastries",
-    image: brownie1,
+    name: "Baked Donuts",
+    category: "Donuts",
+    image: bakedDonuts,
+    tags: ["New Arrivals"],
   },
   {
-    name: "Apricot Almond Pastry",
-    category: "Pastries",
-    image: brownie1,
+    name: "Butter Croissant",
+    category: "Croissants",
+    image: butterCroissant,
+    tags: ["New Arrivals"],
   },
   {
-    name: "Chocolate Ribbon Pastry",
-    category: "Pastries",
-    image: brownie1,
-  },
-  {
-    name: "Vanilla Pearl Pastry",
-    category: "Pastries",
-    image: brownie1,
+    name: "Aaloo Puff",
+    category: "Puffs",
+    image: aalooPuff,
+    tags: ["New Arrivals", "Best Sellers"],
   },
 ];

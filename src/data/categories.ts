@@ -9,7 +9,6 @@ import donutsIcon from "@/assets/categories/donuts-icon.svg";
 import croissantsIcon from "@/assets/categories/croissants-icon.svg";
 import browniesIcon from "@/assets/categories/brownies-icon.svg";
 import chocolavaIcon from "@/assets/categories/chocolava-icon.svg";
-import rollsIcon from "@/assets/categories/rolls-icon.svg";
 import puffsIcon from "@/assets/categories/puffs-icon.svg";
 
 export const categories: Category[] = [
@@ -20,16 +19,16 @@ export const categories: Category[] = [
     popular: true,
   },
   {
+    id: "pastries",
+    name: "Pastries",
+    icon: pastriesIcon,
+    popular: true,
+  },
+  {
     id: "cupcakes",
     name: "Cupcakes",
     icon: cupcakesIcon,
     popular: true,
-  },
-  {
-    id: "pastries",
-    name: "Pastries",
-    icon: pastriesIcon,
-    popular: false,
   },
   {
     id: "macarons",
@@ -47,7 +46,7 @@ export const categories: Category[] = [
     id: "donuts",
     name: "Donuts",
     icon: donutsIcon,
-    popular: false,
+    popular: true,
   },
   {
     id: "croissants",
@@ -65,13 +64,7 @@ export const categories: Category[] = [
     id: "chocolava",
     name: "Chocolava",
     icon: chocolavaIcon,
-    popular: true,
-  },
-  {
-    id: "rolls",
-    name: "Rolls",
-    icon: rollsIcon,
-    popular: true,
+    popular: false,
   },
   {
     id: "puffs",

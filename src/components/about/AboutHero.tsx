@@ -10,7 +10,7 @@ export default function AboutHero() {
     <section className="bg-primary">
       <Container className="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-8 py-12">
         <div className="flex flex-col gap-6">
-          <HeroTitle title="FrenchBleu" />
+          <HeroTitle title="Our Story" />
           <FadeUp delay={0.1}>
             <p className="max-w-xl text-lg text-primary-foreground sm:text-xl lg:text-2xl">
               We blend French-inspired techniques with a modern boutique
