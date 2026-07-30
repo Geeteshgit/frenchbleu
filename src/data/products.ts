@@ -35,43 +35,37 @@ export const products: Product[] = [
     name: "Black Forest Cake",
     category: "Cakes",
     image: blackForestCake,
-    tags: ["Best Sellers"],
   },
   {
     name: "White Forest Cake",
     category: "Cakes",
     image: whhiteForestCake,
-    tags: ["Best Sellers"],
   },
   {
     name: "Pineapple Cake",
     category: "Cakes",
     image: pineappleCake,
-    tags: ["Best Sellers"],
   },
   {
     name: "Butterscotch Cake",
     category: "Cakes",
     image: butterscotchCake,
-    tags: ["Best Sellers"],
   },
   {
     name: "Red Velvet Cake",
     category: "Cakes",
     image: redVelvetCake,
-    tags: ["Best Sellers"],
   },
   {
     name: "Vanilla Cake",
     category: "Cakes",
     image: vanillaCake,
-    tags: ["Best Sellers"],
   },
   {
     name: "Chocolate Brownie",
     category: "Brownies",
     image: brownie1,
-    tags: ["Best Sellers", "New Arrivals"],
+    tags: ["Best Sellers"],
   },
   {
     name: "Chocolava Cake",
@@ -89,19 +83,16 @@ export const products: Product[] = [
     name: "White Forest Pastry",
     category: "Pastries",
     image: whiteForestPastry,
-    tags: ["Best Sellers"],
   },
   {
     name: "Black Forest Pastry",
     category: "Pastries",
     image: blackForestPastry,
-    tags: ["Best Sellers"],
   },
   {
     name: "Red Velvet Pastry",
     category: "Pastries",
     image: redVelvetPastry,
-    tags: ["Best Sellers"],
   },
   {
     name: "Cheesecake Pastry",
@@ -125,18 +116,6 @@ export const products: Product[] = [
     name: "Blueberry Pastry",
     category: "Pastries",
     image: blueberrypastry,
-    tags: ["New Arrivals"],
-  },
-  {
-    name: "Vanilla Blossom Cupcake",
-    category: "Cupcakes",
-    image: brownie1,
-    tags: ["New Arrivals"],
-  },
-  {
-    name: "Salted Caramel Cupcake",
-    category: "Cupcakes",
-    image: brownie1,
     tags: ["New Arrivals"],
   },
   {
@@ -205,7 +184,6 @@ export const products: Product[] = [
     name: "Baked Donuts",
     category: "Donuts",
     image: bakedDonuts,
-    tags: ["New Arrivals"],
   },
   {
     name: "Butter Croissant",
@@ -217,6 +195,6 @@ export const products: Product[] = [
     name: "Aaloo Puff",
     category: "Puffs",
     image: aalooPuff,
-    tags: ["New Arrivals", "Best Sellers"],
+    tags: ["Best Sellers"],
   },
 ];
