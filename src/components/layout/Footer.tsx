@@ -6,6 +6,14 @@ import { contactInfo } from "@/data/contact";
 import { FaInstagram } from "react-icons/fa6";
 
 export default function Footer() {
+  const exploreLinks = navigationLinks.filter(
+    (link) => link.label !== "Contact",
+  );
+  const importantLinks = [
+    { label: "Privacy Policy", href: "/privacy-policy" },
+    { label: "Terms of Service", href: "/terms-of-service" },
+    { label: "Contact Us", href: "/contact" },
+  ];
   return (
     <footer className="bg-primary-foreground text-white">
       <WaveDivider
@@ -13,9 +21,9 @@ export default function Footer() {
         tone="text-background"
         mobilePath="M0 44 C35 44 45 18 80 18 C115 18 125 40 160 40 C195 40 205 10 240 10 C275 10 285 34 320 34 C355 34 365 16 400 16 C435 16 445 44 480 44 C515 44 525 14 560 14 C595 14 605 38 640 38 C675 38 685 10 720 10 C755 10 765 30 800 30 C835 30 845 18 880 18 C915 18 925 42 960 42 C995 42 1005 16 1040 16 C1075 16 1085 36 1120 36 C1155 36 1165 12 1200 12 C1235 12 1245 40 1280 40 C1315 40 1325 18 1360 18 C1395 18 1405 30 1438 30 L1440 120 H0 Z"
       />
-      <Container banner className="flex flex-col gap-12 pb-8 pt-16">
-        <div className="grid gap-10 grid-cols-2 xl:grid-cols-4">
-          <div className="flex flex-col gap-2 col-span-2 xl:col-span-2">
+      <Container banner className="flex flex-col gap-12 pb-6 pt-16">
+        <div className="grid gap-10 grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
+          <div className="flex flex-col gap-2 col-span-2 md:col-span-3 xl:col-span-2">
             <div className="font-logo text-4xl text-white">FrenchBleu</div>
             <p className="max-w-md  text-white/80">
               Luxury pastel bakes made to feel like a celebration.
@@ -39,7 +47,23 @@ export default function Footer() {
               Explore
             </h3>
             <div className="mt-4 flex flex-col items-start gap-3 text-sm text-white/80">
-              {navigationLinks.map((link) => (
+              {exploreLinks.map((link) => (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  className="transition hover:text-primary"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+          <div className="col-span-2 sm:col-span-1">
+            <h3 className="text-sm font-semibold uppercase tracking-[0.22em] text-white">
+              Important Links
+            </h3>
+            <div className="mt-4 flex flex-col items-start gap-3 text-sm text-white/80">
+              {importantLinks.map((link) => (
                 <Link
                   key={link.label}
                   href={link.href}
