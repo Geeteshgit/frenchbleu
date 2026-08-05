@@ -10,8 +10,8 @@ export default function Footer() {
     (link) => link.label !== "Contact",
   );
   const importantLinks = [
-    { label: "Privacy Policy", href: "/privacy-policy" },
-    { label: "Terms of Service", href: "/terms-of-service" },
+    { label: "Privacy Policy", href: "/privacy" },
+    { label: "Terms of Service", href: "/terms" },
     { label: "Contact Us", href: "/contact" },
   ];
   return (
