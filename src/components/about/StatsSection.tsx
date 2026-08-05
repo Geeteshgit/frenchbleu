@@ -18,7 +18,7 @@ const stats = [
 
 export default function StatsSection() {
   return (
-    <section className="pt-20 pb-16 text-foreground">
+    <section className="py-14 text-foreground">
       <Container>
         <FadeUp className="text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.22em] opacity-80">
@@ -35,7 +35,7 @@ export default function StatsSection() {
           </p>
         </FadeUp>
 
-        <div className="mt-14 grid grid-cols-2 gap-8 lg:grid-cols-3">
+        <div className="mt-14 grid sm:grid-cols-3 gap-8">
           {stats.map((stat, index) => (
             <FadeUp key={stat.label} delay={index * 0.1}>
               <div className="text-center">

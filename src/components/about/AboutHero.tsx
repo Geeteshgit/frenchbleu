@@ -9,7 +9,7 @@ export default function AboutHero() {
   return (
     <section className="bg-primary">
       <Container className="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-8 py-12">
-        <div className="flex flex-col gap-6">
+        <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-4 pb-18 text-center sm:px-6 lg:px-8">
           <HeroTitle title="Our Story" />
           <FadeUp delay={0.1}>
             <p className="max-w-xl text-lg text-primary-foreground sm:text-xl lg:text-2xl">
