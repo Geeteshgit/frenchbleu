@@ -4,8 +4,8 @@ import FadeUp from "@/components/animations/FadeUp";
 
 export default function AboutPreview() {
   const aboutPreviewContent = [
-    "We create desserts that feel airy, polished, and softly luxurious, with pastel colors and refined details in every layer.",
-    "Every dessert is crafted to balance elegance and comfort, combining delicate textures, refined presentation, and memorable flavors that feel both modern and timeless. Every dessert is crafted to balance elegance and comfort, combining delicate textures, refined presentation, and memorable flavors that feel both modern and timeless.",
+    "At FrenchBleu, we believe every bake should bring comfort, joy, and a touch of elegance. From artisan breads to handcrafted pastries and cakes, every creation is made fresh with care and passion.",
+    "Inspired by the timeless traditions of French baking, we use quality ingredients and thoughtful craftsmanship to create treats that are both beautiful and delicious. Whether you're visiting for your daily favorite or celebrating a special occasion, we're here to make every moment a little sweeter.",
   ];
 
   return (

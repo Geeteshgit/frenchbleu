@@ -26,7 +26,8 @@ export default function Footer() {
           <div className="flex flex-col gap-2 col-span-2 md:col-span-3 xl:col-span-2">
             <div className="font-logo text-4xl text-white">FrenchBleu</div>
             <p className="max-w-md  text-white/80">
-              Luxury pastel bakes made to feel like a celebration.
+              Freshly baked breads, pastries, and handcrafted cakes made with
+              passion.
             </p>
 
             <div className="flex flex-wrap items-center gap-2 mt-2">

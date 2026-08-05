@@ -13,9 +13,9 @@ export default function HomeHero() {
           <HeroTitle title="FrenchBleu" />
           <FadeUp delay={0.1}>
             <p className="max-w-xl text-lg text-primary-foreground sm:text-xl lg:text-2xl">
-              Handcrafted desserts, editorial presentation, and a playful
-              boutique mood designed to feel indulgent, airy, and irresistibly
-              cute
+              Experience the art of fresh baking with handcrafted breads,
+              delicate pastries, and beautifully made cakes, prepared daily
+              using quality ingredients and timeless techniques.
             </p>
           </FadeUp>
         </div>

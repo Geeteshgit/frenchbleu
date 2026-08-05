@@ -26,23 +26,48 @@ export const contactInfo: Info[] = [
 
 export const faqItems: FAQItem[] = [
   {
-    question: "Do you offer custom cakes?",
+    question: "Is your bakery fully vegetarian?",
     answer:
-      "Yes. We create custom flavors, colors, sizes, and decorative themes for celebrations of all kinds.",
+      "Yes. All of our products are 100% vegetarian, and we do not use any non-vegetarian ingredients in our bakery.",
   },
   {
-    question: "Can I order a dessert table?",
+    question: "What are your opening hours?",
     answer:
-      "Absolutely. We can design a coordinated spread with cakes, cupcakes, macarons, and petite treats.",
+      "Our opening hours are listed on the Contact page and may vary during holidays or special occasions. Please check before visiting.",
   },
   {
-    question: "How far in advance should I order?",
+    question: "Do you bake fresh every day?",
     answer:
-      "For custom cakes and events, we recommend 5 to 10 days of lead time depending on scope and date.",
+      "Yes. We bake fresh breads, pastries, cakes, and other baked goods daily to ensure the best quality and taste.",
   },
   {
-    question: "Do you deliver?",
+    question: "Do you make custom cakes?",
     answer:
-      "Yes, local delivery is available for larger orders and special event desserts.",
+      "Yes. We create custom cakes for birthdays, anniversaries, weddings, and other special occasions. Contact us in advance to discuss your design and requirements.",
+  },
+  {
+    question: "How far in advance should I place a custom order?",
+    answer:
+      "We recommend placing custom cake orders at least 2-3 days in advance. Larger or more detailed orders may require additional notice.",
+  },
+  {
+    question: "Do you offer eggless cakes?",
+    answer:
+      "Yes. We offer delicious eggless cakes and desserts. Please contact us to learn about available flavors and customization options.",
+  },
+  {
+    question: "Can I place an order online?",
+    answer:
+      "You can contact us through our website or by phone to enquire about products and place an order, subject to availability.",
+  },
+  {
+    question: "Where is French Bleu Bakery located?",
+    answer:
+      "Our address and an interactive Google Map are available on the Contact page to help you find us easily.",
+  },
+  {
+    question: "How can I contact the bakery?",
+    answer:
+      "You can reach us through the contact form on our website, by phone, or by visiting us during business hours.",
   },
 ];

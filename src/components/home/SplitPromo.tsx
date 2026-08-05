@@ -12,7 +12,7 @@ export default function SplitPromo() {
       image: customDessertBoxImage,
     },
     right: {
-      title: "Your Vision, Beautifully Baked.",
+      title: "Your Vision, Beautifully Baked",
       subtitle: "Create a cake that's uniquely yours.",
       cta: "Design A Cake",
       href: "/contact",

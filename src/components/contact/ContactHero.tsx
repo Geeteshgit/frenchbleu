@@ -11,10 +11,7 @@ export default function ContactHero() {
         <HeroTitle title="Contact Us" />
 
         <FadeUp delay={0.1}>
-          <p className="text-xl">
-            Custom cakes, macaron boxes, cupcake towers, and event dessert
-            tables are all welcome.
-          </p>
+          <p className="text-xl">{`Have a question or custom order? We'd love to hear from you.`}</p>
         </FadeUp>
       </div>
 
