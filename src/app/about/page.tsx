@@ -1,4 +1,5 @@
 import AboutHero from "@/components/about/AboutHero";
+import StatsSection from "@/components/about/StatsSection";
 import StorySection from "@/components/about/StorySection";
 import WaveDivider from "@/components/ui/WaveDivider";
 
@@ -31,6 +32,7 @@ const AboutPage = () => {
               Z"
         tone="text-background"
       />
+      <StatsSection />
     </main>
   );
 };
